@@ -1,0 +1,16 @@
+parameters:
+    tmpDir: build/phpstan
+    level: 6
+    paths:
+        - app
+    bootstrapFiles:
+        - vendor/phpstan/phpstan/bootstrap.php
+    excludePaths:
+        - app/Config/Routes.php
+        - app/Views/*
+        - vendor/
+        - writable/
+    scanDirectories:
+        - system/Helpers
+        - app/Helpers
+        - app/Libraries

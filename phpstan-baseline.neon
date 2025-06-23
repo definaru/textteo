@@ -1,0 +1,21 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Property App\\\\Models\\\\SubcategoryModel\\:\\:\\$allowedFields type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: app/models/SubcategoryModel.php
+
+		-
+			message: "#^Property App\\\\Models\\\\SubcategoryModel\\:\\:\\$db with generic class CodeIgniter\\\\Database\\\\BaseConnection does not specify its types\\: TConnection, TResult$#"
+			count: 1
+			path: app/models/SubcategoryModel.php
+
+		-
+			message: "#^Property App\\\\Models\\\\SubcategoryModel\\:\\:\\$validationMessages type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: app/models/SubcategoryModel.php
+
+		-
+			message: "#^Property App\\\\Models\\\\SubcategoryModel\\:\\:\\$validationRules type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: app/models/SubcategoryModel.php

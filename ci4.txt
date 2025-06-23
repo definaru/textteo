@@ -1,0 +1,12 @@
+Query
+$builder = $db->table('table_name');
+getResult() / getRow()
+
+helper life 
+->
+
+Language 
+->language array should return value
+
+View Page Correction
+-> $language['tag'] to $language['tag'] ?? " ";

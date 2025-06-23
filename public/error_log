@@ -1,0 +1,942 @@
+[30-Sep-2024 14:37:50 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[30-Sep-2024 14:37:51 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[30-Sep-2024 14:37:51 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[30-Sep-2024 14:37:52 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[30-Sep-2024 14:37:53 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[30-Sep-2024 14:37:53 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[30-Sep-2024 14:37:54 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[30-Sep-2024 14:37:55 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:46:01 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:47:39 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:47:41 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:47:42 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:47:43 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:47:44 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:12 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:14 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:15 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:16 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:17 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:18 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:19 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:20 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:21 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:21 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:22 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:23 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:24 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:25 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:26 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:27 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:28 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:29 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:30 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:33 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:33 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:34 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:35 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:36 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:37 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:38 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:38 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:39 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:40 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:41 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:43 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:44 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:45 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:46 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:47 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:47 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:48 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:49 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[20-Dec-2024 10:49:50 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:21 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:22 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:23 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:24 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:24 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:25 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:26 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:27 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:28 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:29 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:30 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:31 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:31 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:32 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:33 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:34 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:35 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:36 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:37 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:37 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:38 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:39 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:40 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:41 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:42 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:42 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:43 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:44 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:45 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:46 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:47 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:48 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:48 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:49 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:50 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:51 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:53 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:54 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:55 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:56 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:56 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:57 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:58 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:08:59 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[11-Jan-2025 06:09:00 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON()
+#1 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format()
+#2 /home/spj7xobzt1kk/public_html/system/API/ResponseTrait.php(98): CodeIgniter\Debug\Exceptions->format()
+#3 /home/spj7xobzt1kk/public_html/system/Debug/Exceptions.php(150): CodeIgniter\Debug\Exceptions->respond()
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#5 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Format/JSONFormatter.php on line 41
+[27-Feb-2025 09:58:35 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "Config\ENVIRONMENT" in /home/spj7xobzt1kk/public_html/system/Config/Factories.php:129
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Common.php(216): CodeIgniter\Config\Factories::__callStatic()
+#1 /home/spj7xobzt1kk/public_html/system/Config/Services.php(148): config()
+#2 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::codeigniter()
+#3 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#4 /home/spj7xobzt1kk/public_html/system/Config/Services.php(145): CodeIgniter\Config\BaseService::getSharedInstance()
+#5 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::codeigniter()
+#6 /home/spj7xobzt1kk/public_html/public/index.php(54): CodeIgniter\Config\BaseService::__callStatic()
+#7 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Config/Factories.php on line 129
+[27-Feb-2025 09:58:39 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "Config\ENVIRONMENT" in /home/spj7xobzt1kk/public_html/system/Config/Factories.php:129
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Common.php(216): CodeIgniter\Config\Factories::__callStatic()
+#1 /home/spj7xobzt1kk/public_html/system/Config/Services.php(148): config()
+#2 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::codeigniter()
+#3 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#4 /home/spj7xobzt1kk/public_html/system/Config/Services.php(145): CodeIgniter\Config\BaseService::getSharedInstance()
+#5 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::codeigniter()
+#6 /home/spj7xobzt1kk/public_html/public/index.php(54): CodeIgniter\Config\BaseService::__callStatic()
+#7 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Config/Factories.php on line 129
+[27-Feb-2025 09:59:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "Config\ENVIRONMENT" in /home/spj7xobzt1kk/public_html/system/Config/Factories.php:129
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Common.php(216): CodeIgniter\Config\Factories::__callStatic()
+#1 /home/spj7xobzt1kk/public_html/system/Config/Services.php(148): config()
+#2 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::codeigniter()
+#3 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#4 /home/spj7xobzt1kk/public_html/system/Config/Services.php(145): CodeIgniter\Config\BaseService::getSharedInstance()
+#5 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::codeigniter()
+#6 /home/spj7xobzt1kk/public_html/public/index.php(54): CodeIgniter\Config\BaseService::__callStatic()
+#7 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Config/Factories.php on line 129
+[27-Feb-2025 09:59:09 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "Config\ENVIRONMENT" in /home/spj7xobzt1kk/public_html/system/Config/Factories.php:129
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Common.php(216): CodeIgniter\Config\Factories::__callStatic()
+#1 /home/spj7xobzt1kk/public_html/system/Config/Services.php(148): config()
+#2 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::codeigniter()
+#3 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#4 /home/spj7xobzt1kk/public_html/system/Config/Services.php(145): CodeIgniter\Config\BaseService::getSharedInstance()
+#5 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::codeigniter()
+#6 /home/spj7xobzt1kk/public_html/public/index.php(54): CodeIgniter\Config\BaseService::__callStatic()
+#7 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Config/Factories.php on line 129
+[27-Feb-2025 09:59:11 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "Config\ENVIRONMENT" in /home/spj7xobzt1kk/public_html/system/Config/Factories.php:129
+Stack trace:
+#0 /home/spj7xobzt1kk/public_html/system/Common.php(216): CodeIgniter\Config\Factories::__callStatic()
+#1 /home/spj7xobzt1kk/public_html/system/Config/Services.php(148): config()
+#2 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::codeigniter()
+#3 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+#4 /home/spj7xobzt1kk/public_html/system/Config/Services.php(145): CodeIgniter\Config\BaseService::getSharedInstance()
+#5 /home/spj7xobzt1kk/public_html/system/Config/BaseService.php(252): CodeIgniter\Config\Services::codeigniter()
+#6 /home/spj7xobzt1kk/public_html/public/index.php(54): CodeIgniter\Config\BaseService::__callStatic()
+#7 {main}
+  thrown in /home/spj7xobzt1kk/public_html/system/Config/Factories.php on line 129
+[27-Feb-2025 09:59:21 UTC] PHP Parse error:  syntax error, unexpected token ";" in /home/spj7xobzt1kk/public_html/app/Config/App.php on line 22
+[27-Feb-2025 10:01:54 UTC] PHP Parse error:  syntax error, unexpected identifier "error_reporting", expecting "function" or "const" in /home/spj7xobzt1kk/public_html/app/Config/App.php on line 24
+[27-Feb-2025 10:01:57 UTC] PHP Parse error:  syntax error, unexpected identifier "error_reporting", expecting "function" or "const" in /home/spj7xobzt1kk/public_html/app/Config/App.php on line 24
+[27-Feb-2025 10:01:59 UTC] PHP Parse error:  syntax error, unexpected identifier "error_reporting", expecting "function" or "const" in /home/spj7xobzt1kk/public_html/app/Config/App.php on line 24
+[27-Feb-2025 10:02:22 UTC] PHP Parse error:  syntax error, unexpected identifier "ini_set", expecting "function" or "const" in /home/spj7xobzt1kk/public_html/app/Config/App.php on line 24
