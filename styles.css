@@ -1,0 +1,1695 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bs-warning-rgb: 253, 151, 32;
+}
+
+body,
+html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #252525;
+}
+
+
+@media (max-width: 767px) {
+  /* Adjust arrow size on smaller screens */
+  .arrow {
+    font-size: 20px; /* Smaller arrow for mobile */
+  }
+  .problem-arrows {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 433px) or (max-width: 768px) or ((min-width: 768px) and (max-width: 991px)) {
+  /* Adjust arrow size on smaller screens */
+  .arrow {
+    font-size: 20px; /* Smaller arrow for mobile */
+  }
+  .problem-arrows {
+    display: flex !important;
+  }
+}
+
+section{
+  margin-bottom: 50px;
+}
+
+.section-one-words{
+  margin-left: 82px;
+  margin-top: 15%;
+}
+
+.section-one-image{
+  height: 566px;
+  width: 504px;
+}
+
+@media (max-width: 768px) {
+    .section-one-words{
+        margin-left: 0px;
+    }
+}
+
+
+.header-wrapper {
+    background: #FFFFFF;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Desktop Layout */
+@media (min-width: 992px) {
+    .header-container {
+        padding: 20px 100px;
+        justify-content: flex-start;
+    }
+
+    .desktop-layout {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-nav {
+        margin-left: 40px;
+    }
+}
+
+/* Navigation Styles */
+.header-nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.header-nav a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #757575;
+    text-decoration: none;
+}
+
+/* ======================== */
+/* MOBILE/TABLET LAYOUT */
+/* ======================== */
+@media (max-width: 991px) {
+    .header-container {
+        justify-content: space-between;
+        padding: 16px;
+        position: relative;
+    }
+
+    .logo-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo-center img {
+        width: 120px;
+        height: auto;
+    }
+
+    #menu-icon,
+    #menu-icon2 {
+        background: none;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+    }
+
+
+    #menu-icon img,
+    #menu-icon2 img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .cta-content {
+        max-width: 100%;
+        margin-top: 30%;
+    }
+
+    .cta-content #joinBtn{
+       width: 95.5% !important;
+       display: block;
+    }
+
+    .cta-content #joinBtn .cta-button{
+         width: 100% !important;
+    }
+
+    
+    .cta-content .cta-title{
+       width: 80% !important;
+    }
+
+    .cta-content .cta-subtitle{
+       width: 80% !important;
+    }
+
+    .cta-title {
+        font-size: 28px;
+    }
+
+    .cta-subtitle {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+}
+
+/* Right Group */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (min-width: 992px) {
+    .header-right {
+        margin-left: auto;
+    }
+}
+
+.btn-login {
+    width: 48px;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #C3C3C3;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .btn-outline-dark:hover {
+    color: #000;
+    background: #fff;
+    border-color: #ddd;
+}
+.btn-book-now {
+    padding: 10px 20px;
+    background: #252525;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        color: #fff;
+        background: #000;
+    }
+}
+
+.btn-join-now {
+    padding: 10px 20px;
+    background: none;
+    /* Remove background */
+    border: 2px solid #FD9720;
+    /* Add an outline */
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FD9720;
+    /* Change text color to match the outline */
+    cursor: pointer;
+}
+
+/* ======================== */
+/* MOBILE NAVIGATION */
+/* ======================== */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 1001;
+    overflow-y: auto;
+}
+
+.mobile-nav.active {
+    display: block;
+}
+
+.mobile-nav-header {
+    padding: 20px 16px;
+    border-bottom: 1px solid #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-menu-title {
+    color: #666;
+    font-size: 14px;
+}
+
+.mobile-menu-title img {
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-nav-logo {
+    width: 120px;
+}
+
+.mobile-nav-logo img {
+    width: 100%;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 16px;
+}
+
+.mobile-nav li {
+    padding: 12px 0;
+}
+
+.mobile-nav a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.mobile-nav-footer {
+    padding: 16px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+}
+
+.btn-mobile-book,
+.btn-mobile-login,
+.btn-mobile-join {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-mobile-book {
+    background: #FD9720;
+    color: #fff;
+}
+
+btn-mobile-join {
+    background: none;
+    /* Remove background */
+    border: 2px solid #252525;
+    /* Add an outline */
+    color: #252525;
+    /* Set text color to match the outline */
+    cursor: pointer;
+}
+
+.btn-mobile-login {
+    background: #fff;
+    border: 1px solid #C3C3C3;
+    color: #252525;
+}
+
+/* Mobile Nav Overlay */
+.mobile-nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.mobile-nav-overlay.active {
+    display: block;
+}
+
+/* Prevent body scroll when menu is open */
+body.menu-open {
+    overflow: hidden;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* ======================== */
+/* HERO SECTION */
+/* ======================== */
+.hero-section {
+    background: #E8EAFF;
+    background-image: url(/uploads/images/bg_hero.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+
+.hero-subtitle {
+    font-size: 20px;
+    line-height: 140%;
+    color: #4C4C4C;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sale {
+    color: #FD9720;
+    font-size: 26px;
+    line-height: 140%;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link {
+    --bs-nav-link-color: #757575;
+    --bs-nav-link-font-weight: 500;
+    --bs-nav-link-font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.py-25 {
+    padding: 11px 0;
+}
+
+.btn-warning {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #FD9720;
+    --bs-btn-border-color: #FD9720;
+    --bs-btn-active-bg: #FD9720;
+    --bs-btn-active-border-color: #FD9720;
+
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #252525;
+    --bs-btn-hover-border-color: #252525;
+    line-height: 140%;
+}
+
+/* Tablet and Small Screens */
+@media (max-width: 768px) {
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+   .cta-content #joinBtn{
+       width: 95.5% !important;
+       display: block;
+    }
+
+    .cta-content #joinBtn .cta-button{
+         width: 100% !important;
+    }
+
+    .cta-content .cta-title{
+       width: 80% !important;
+    }
+
+    .cta-content .cta-subtitle{
+       width: 80% !important;
+    }
+
+    .cta-title {
+        font-size: 28px;
+    }
+
+    .cta-subtitle {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+
+    .btn-warning {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+/* ======================== */
+/* SERVICES SECTION */
+/* ======================== */
+
+
+.services-title {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.services-title h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 49px;
+    font-weight: 600;
+    color: #252525;
+    line-height: 1.2;
+}
+
+/* Cards Container */
+.services-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Card */
+.service-card {
+    flex: 1;
+    max-width: 100%;
+    background: #E8EAFF;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        max-width: 100%;
+        margin-top: 24px;
+    }
+
+    .services-title h2 {
+        font-size: 28px;
+    }
+}
+
+
+.discount-wrapper {
+    background: #FF916E;
+    border-radius: 12px;
+    position: relative;
+}
+
+.discount-content {
+    z-index: 2;
+}
+
+.discount-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.discount-image {
+  position: relative; /* Needed for absolute positioning of the pseudo-element */
+  width: 100%; /* Or the desired width of your banner */
+  overflow: hidden; /* Important to clip the overflow of the pseudo-element */
+}
+.discount-image img {
+    position: relative;
+    z-index: 2;
+}
+
+.discount-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.btn-discount {
+    background: #252525;
+    color: #FFFFFF;
+    padding: 12px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-discount:hover {
+    background: #fff;
+}
+
+/* The image is absolutely positioned on desktop/tablet */
+.discount-image {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    max-width: 50%;
+    z-index: 1;
+}
+
+.discount-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.social a {
+    background-color: #fff;
+    color: #000;
+    & i {
+        font-size: 25px;
+    }
+    
+}
+
+/* ========== Responsive Fixes for Mobile ========== */
+@media (max-width: 768px) {
+    .btn-discount{
+        width:100%;
+    }
+
+    .discount-image {
+        position: absolute;
+       right: 70px;
+        bottom: 0;
+        max-width: none;
+        width: auto;
+        height: auto;
+        overflow: visible;
+    }
+
+    .discount-image img{
+        position: relative;
+        right: -17.6%;
+
+    }
+
+    .discount-content h2 {
+        font-size: 32px;
+    }
+
+    .review-slide h2{
+        font-size: 28px !important;
+    }
+
+    .social{
+        margin-left: -2%;
+    }
+
+    .review-slide h3{
+        font-size: 20px !important;
+        font-weight: 500;
+    }
+
+    .faq-question{
+        font-weight: 500 !important;
+        font-size: 20px !important;
+        line-height: 120%;
+    }
+
+    h1,h2,h3,h4{
+        font-size:28px !important;
+    }
+    
+    .trusted-vets-description{
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        text-align: left;
+    }
+
+    .discount-content p {
+        font-size: 16px;
+    }
+
+}
+
+.review-slide p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 140%;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.pet-problem-header {
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+/* Container for the cards + arrows */
+.pet-problem-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Hide arrows on mobile/tablet */
+@media (max-width: 991px) {
+    .problem-arrows {
+        display: none !important;
+    }
+
+   .cta-content #joinBtn{
+       width: 95.5% !important;
+       display: block;
+    }
+
+    .cta-content #joinBtn .cta-button{
+         width: 100% !important;
+    }
+    
+    .cta-content .cta-title{
+       width: 80% !important;
+    }
+
+    .cta-content .cta-subtitle{
+       width: 80% !important;
+    }
+
+    .cta-title {
+        font-size: 28px;
+    }
+
+    .cta-subtitle {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+}
+
+/* Desktop arrow containers */
+.problem-arrows {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    right: 0;
+    top: -60px;
+    /* adjust as needed */
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #C3C3C3;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.arrow-left i {
+    transform: rotate(180deg);
+    /* left chevron */
+}
+
+/* Cards wrapper */
+.problem-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    /* or wrap if you want them to break */
+    gap: 20px;
+    overflow: hidden;
+    /* if you plan to do a scroll/slider style */
+    width: 100%;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    /* Hide scrollbar in all major browsers */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ & Edge */
+    margin-top: 28px;
+}
+
+.problem-cards::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+/* Single problem card */
+.problem-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 295px;
+    min-width: 295px;
+    /* prevents shrink if you plan horizontal scroll */
+    height: 148px;
+    background: #E8EAFF;
+    border-radius: 4px;
+    padding: 24px;
+}
+
+/* Icon in the card */
+.card-icon .icon-img {
+    width: 44px;
+    height: 44px;
+    opacity: 80%;
+}
+
+/* Text + arrow on the right */
+.card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-text h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 120%;
+    color: #252525;
+    margin: 0;
+}
+
+.card-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.card-arrow i {
+    font-size: 16px;
+    color: #252525;
+}
+
+.review-carousel-section {
+    background: #EAE8FB url("assets/images/Desktop/Hero/Hero\ background.png") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Optional wavy background shape */
+.review-bg {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    width: 2600px;
+    height: 445px;
+
+}
+
+/* 1) The wrapper for the horizontal slides */
+.review-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 2) The track that holds all slides side-by-side */
+.review-slider-track {
+    display: flex;
+    transition: transform 0.6s ease;
+    /* smooth slide */
+}
+
+.review-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Headings and text from Figma */
+.review-slide h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 47px;
+    color: #252525;
+    margin-bottom: 16px;
+    line-height: 120%;
+}
+
+.review-slide h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #252525;
+    margin-bottom: 16px;
+    line-height: 120%;
+}
+
+
+.reviewer-dog {
+    font-family: 'Poppins', sans-serif;
+}
+
+.reviewer-name {
+    color: #252525;
+    margin: 0;
+}
+
+/* Navigation (dots + arrows) placed absolutely in the .container */
+.review-nav {
+    /* position: absolute; */
+    /* adjust vertical offset as desired */
+    /* left: 12px; */
+    /* horizontally align with text column, adjust as needed */
+    width: 540px;
+    /* or auto; depends on design spacing */
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* dots on left, arrows on right */
+}
+
+/* Dots styling */
+.dots-wrapper .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    /* unselected */
+    cursor: pointer;
+}
+
+.dots-wrapper .dot.active {
+    background: #252525;
+    /* highlight the current slide */
+}
+
+/* Arrows styling */
+.arrows-wrapper .arrow {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #C3C3C3;
+    background: #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow-left i {
+    transform: rotate(180deg);
+    /* left chevron */
+}
+
+/******************************************/
+/* TRUSTED VETS SECTION                   */
+/******************************************/
+.trusted-vets-section {
+    background-color: #fff;
+}
+
+/* Stats container */
+.trusted-vet-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* center icon + text on mobile */
+}
+
+/* Icon images */
+.trusted-vet-icon img {
+    width: 64px;
+    height: 64px;
+}
+
+/* Main stat number (e.g., "5+") */
+.trusted-vet-number {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    color: #393939;
+    margin-bottom: 4px;
+}
+
+/* Label under the stat number */
+.trusted-vet-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #757575;
+    opacity: 0.7;
+    margin-bottom: 0;
+}
+
+/* Section title */
+.trusted-vets-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    color: #252525;
+    margin-bottom: 16px;
+    margin-top: 100px;
+}
+
+.row {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+
+#trusted-vets-section .row {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Paragraph description */
+.trusted-vets-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    color: #545454;
+}
+
+/* Optionally scale text down on smaller screens */
+@media (max-width: 575px) {
+    .trusted-vet-number {
+        font-size: 36px;
+    }
+
+    .trusted-vet-label,
+    .trusted-vets-description {
+        font-size: 16px;
+    }
+}
+
+
+.how-it-works-section {background: #fff;}
+
+.hiw-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #252525;
+}
+
+.hiw-steps {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.hiw-step {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.hiw-step.active .step-number {
+    color: #252525;
+    /* black if active */
+}
+
+.hiw-step:not(.active) .step-number {
+    color: #b3b3b3;
+    /* grey if not active */
+}
+
+.step-number {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+/* Step text headings/paragraphs */
+.step-text h3 {
+    margin: 0 0 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #252525;
+}
+
+.step-text p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #545454;
+}
+
+/******************************************/
+/* DESKTOP PHONE MOCKUP (≥ 992px)         */
+/******************************************/
+.phone-mockup {
+    max-width: 100%;
+    position: relative;
+    padding: 1.6%;
+}
+
+.step-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+.step-image.active {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    z-index: 2;
+}
+
+/******************************************/
+/* MOBILE SLIDER (< 992px)                */
+/******************************************/
+.mobile-slider-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mobile-phone-slider {
+    /* width: 300px; */
+    /* or your desired max */
+    max-width: 100%;
+    position: relative;
+    /* padding:20px !important; */
+}
+
+.mobile-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+.mobile-slide.active {
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+.mobile-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.mobile-dots .dot {
+    width: 10px;
+    height: 10px;
+    background: #c3c3c3;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mobile-dots .dot.active {
+    background: #252525;
+    /* black for selected dot */
+}
+
+/******************************************/
+/* RESPONSIVE ADJUSTMENTS                 */
+/******************************************/
+@media (max-width: 991px) {
+    .hiw-title {
+        font-size: 36px;
+    }
+    .step-number {
+        font-size: 28px;
+    }
+    .step-text p {
+        font-size: 14px;
+    }
+}
+
+.why-choose-us-section {
+    background: #EAE8FB url("assets/images/Desktop/Hero/Hero\ background.png") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.why-bg {
+    /* Wavy shape in the background */
+    position: absolute;
+    width: 2189px;
+    height: 1738.5px;
+    left: 50%;
+    /* center horizontally */
+    top: -1100px;
+}
+
+.why-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #252525;
+    line-height: 120%;
+}
+
+.why-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #545454;
+    max-width: 700px;
+}
+
+/* Card wrapper */
+.why-card {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 14px rgba(210, 207, 228, 0.4);
+    border-radius: 8px;
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.why-icon {
+    width: 72px;
+    height: 72px;
+    background: #FFEFDA;
+    /* Light orange rectangle */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Just to illustrate an icon inside it */
+    img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+}
+
+.why-card-text {
+    h3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        color: #252525;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #545454;
+        line-height: 140%;
+    }
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .why-title {
+        font-size: 32px;
+    }
+    .why-subtitle {
+        font-size: 16px;
+    }
+    .why-card {
+        padding: 16px;
+    }
+    .why-card-text p {
+        font-size: 14px;
+    }
+}
+
+
+/************************************************/
+/* FAQ SECTION - MATCH PREVIOUS SECTION SPACING */
+/************************************************/
+.faq-section {
+    width: 100%;
+    background: #FFFFFF;
+}
+
+/* 
+    This .faq-wrapper matches the same 1440px max-width 
+    and side padding you used in your previous section 
+    (the one with the 3 cards).
+  */
+.faq-wrapper {
+    max-width: 1440px;
+    /* same as the previous section's container */
+    margin: 0 auto;
+    /* center it on large screens */
+    padding: 0 100px;
+    /* same left/right padding as above section */
+}
+
+@media (max-width: 992px) {
+
+    /* On smaller screens, reduce side padding */
+    .faq-wrapper {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Even smaller devices can have less padding if needed */
+    .faq-wrapper {
+        padding: 0 20px;
+    }
+}
+
+/* FAQ title styling */
+.faq-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #252525;
+}
+
+/* Each FAQ item (accordion) */
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+/* The answer is hidden by default (sliding open animation) */
+.faq-answer {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* The clickable question row */
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-question span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #252525;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.faq-icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+/* When the item is open, reveal the answer and flip the chevron */
+.faq-item.open .faq-answer {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(180deg);
+}
+
+/* The horizontal divider after each FAQ */
+.faq-divider {
+    width: 100%;
+    border: 1px solid #E1E1E1;
+    margin: 0;
+}
+
+.cta-section {
+    background: #fff;
+    margin-bottom: 100px !important;
+}
+.faq-section{
+    margin-top: 100px !important;
+}
+
+.services-section{
+    margin-top: 100px !important;
+}
+
+.cta-section .desktop-img {display: block;}
+.cta-section .mobile-img {display: none;}
+
+@media (max-width: 768px) {
+    .cta-section .desktop-img {
+        display: none;
+    }
+    .cta-section .mobile-img {
+        display: block;
+    }
+}
+
+.cta-hero {
+    height: 419px;
+    position: relative;
+}
+
+.cta-bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0.25rem;
+}
+
+/* Left-to-right gradient overlay so text is visible on the left.
+     Adjust the color stops to show more or less of the dog. */
+.cta-gradient {
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+}
+
+.cta-content {
+    transform: translateY(-50%);
+    z-index: 1;
+    color: #fff;
+}
+
+.cta-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.cta-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #FD9720;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px 44px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* ========== MEDIA QUERIES FOR PHONES ========== */
+@media (max-width: 576px) {
+    .chat{
+        height: 400px !important;
+    }
+    .cta-hero {height: 500px;}
+
+    .cta-content #joinBtn{
+       width: 95.5% !important;
+       display: block;
+    }
+
+    .cta-content #joinBtn .cta-button{
+         width: 100% !important;
+    }
+
+    .cta-content .cta-title{
+       width: 80% !important;
+    }
+
+    .cta-content .cta-subtitle{
+       width: 80% !important;
+    }
+
+     .cta-title {
+        font-size: 28px;
+    }
+
+    .cta-subtitle {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+}
+
+.footer-section {
+    background: #252525;
+    color: #d7d7d7;
+    & span, p {
+        color: #D7D7D7;
+    }
+}
+
+.footer-link {
+    color: #d7d7d7;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-social-icon {
+    text-decoration: none;
+    background: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    padding: 20px;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.btn-outline-light {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #252525;
+}
+
+/* The Sign Up button full width on small screens */
+@media (max-width: 576px) {
+    .sign-up-btn {
+        width: 100%;
+    }
+
+    .footer-link {
+        font-size: 14px;
+    }
+
+    .footer-social-icon {
+        font-size: 18px;
+    }
+}
+
+/* Responsive tweaks if needed */
+@media (max-width: 768px) {
+  .mobile-slider-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .mobile-phone-slider {
+    max-width: 100%;
+  }
+}
+
+/* Paragraph under the logo restricted to 320px only on LG screens (≥ 992px). */
+@media (min-width: 992px) {
+    .logo-paragraph {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* .arrows-wrapper{
+        display: none !important;
+    } */
+    .review-nav{
+        position: unset !important;
+        margin-top: 5%;
+    }
+}
+
+.faq-answer{
+    width: 1020px;
+}
+
+@media (max-width: 768px) {
+    .review-nav{
+        width: 96%;
+    }
+}
+
+@media (max-width: 991px) {
+.faq-answer{
+    width: 100% !important;
+}
+}
+
+/****************** create a new account *******************/
+
+/* ======================== */
+/* Create Account */
+/* ======================== */
+
+
+.create-account-section .card {
+    border-radius: 8px;
+    /* nicer corners */
+}
+
+.create-account-section .btn.btn-warning {
+    background-color: #FD9720;
+    border-color: #FD9720;
+    font-weight: 600;
+}
+
+.create-account-section .btn-outline-secondary {
+    color: #252525;
+    border-color: #d7d7d7;
+}
+
+.create-account-section .btn-outline-secondary:hover {
+    background-color: #eee;
+}
+
+/* If you want the section to have a light background. 
+     You can do: 
+  .create-account-section {
+    background: #fafafa;
+  }
+  */
+
+.btn-warning:hover {
+    color: white;
+}
+
+
+
+.mobile-slider-wrapper {
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+/* Phone slider container */
+.mobile-phone-slider {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* All slides stacked on top of each other */
+.mobile-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  z-index: 0;
+}
+
+/* Show active slide */
+.mobile-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Dot navigation */
+.mobile-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.mobile-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-dots .dot.active {
+  background-color: #666;
+}
+
+

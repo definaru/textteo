@@ -1,0 +1,49 @@
+.swal2-popup .swal2-title {
+  font-size: 24px !important;
+}
+ .click_me{
+    background: white;
+    border: 2px dashed #78bd34;
+    padding: 31px 102px 34px 115px;
+    }
+    .previewsign
+    {   
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    color: #bbbabb;
+    height: 253px;
+    width: 46%;
+    text-align: center;
+    float: right;
+    vertical-align: middle;
+    top: 73px;
+    position: fixed;
+    right: 35px;
+  }
+  .m-signature-pad-body
+  {
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    color: #bbbabb;
+    height: 253px;
+    width: 46%;
+    text-align: center;
+    float: right;
+    vertical-align: middle;
+    top: 73px;
+    position: fixed;
+    left: 33px;
+  }
+  .m-signature-pad-footer
+  {
+    bottom: 250px;
+    left: 218px;
+    position: fixed;
+  }
+    .img
+  {
+        right: 0;
+    position: absolute;
+  }
+
+  

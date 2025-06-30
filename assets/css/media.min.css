@@ -1,0 +1,728 @@
+@charset "UTF-8";
+
+@media screen and (max-width:767px) {
+    .image-hero {
+        width: auto;
+        height: 350px;
+        position: relative;
+        bottom: 0;
+    }
+    .hero-title {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 120%;
+        color: #252525;
+        font-family:'Poppins';
+    }
+    .hero-section {
+        overflow: hidden;
+        height: 100%;
+    }
+    .navbar-collapse {
+        height: 91vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 11px;
+        border-top: 1px solid #C3C3C3;
+        padding: 15px;
+    }
+    .w-action {
+        width: 100%;
+    }
+    .btn-outline-dark {
+        border-radius: 4px;
+        border: 1px solid #C3C3C3;
+        padding: 10px 20px;
+    }
+    .services-section {
+        padding: 0;
+        background: #ffffff;
+    }
+    .service-card .card-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        position: relative;
+        top: -34px;
+    }
+    .service-card .card-image {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        padding-top: 0px;
+    }
+    .service-card .card-content h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px !important;
+        font-weight: 500;
+        color: #252525;
+        margin-bottom: 8px;
+    }
+    .service-card .card-content p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #252525;
+        line-height: 1.4;
+        margin: 0;
+    }
+    .discount-section {
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .btn-discount {
+        display: block;
+    }
+    .discount-wrapper {
+        padding: 48px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(/assets/images/Mobile/mobile-stripe-discount.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        overflow: hidden;
+    }
+    .discount-content {
+        max-width: 100%;
+        text-align: left;
+        margin-bottom: 50%;
+    }
+    .discount-image::after {
+        position: absolute;
+        content: '';
+        width: 300px;
+        height: 300px;
+        background-color: #ffffff96;
+        top: 24px;
+        right: -24%;
+        border-radius: 50em;
+        z-index: 1;
+        filter: blur(3.5rem);
+    }
+    .pet-problem-section {
+        position: relative;
+        width: 100%;
+        background: #fff;
+        padding: 0;
+        margin-top: 50px;
+    }
+    .pet-problem-header {
+        margin: 0;        
+    }
+    .pet-problem-header h2{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px !important;
+        line-height: 120% !important;
+        color: #141414;
+    }
+    .pet-problem-header p{
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 150% !important;
+        margin: 0;
+    }
+    .card-text h3 {
+        font-size: 20px !important;
+    }
+    .review-slide img {
+        float: right;
+        position: relative;
+        top: 0;
+    }
+    .review-slide {
+        padding: 0;
+    }
+    .review-carousel-section {
+        margin-top: 50px;
+        padding: 50px 0;
+        & button {
+            border: none !important;
+        }
+    }
+    .reviewer-dog {
+        font-weight: 400;
+        color: rgba(84, 84, 84, 0.6);
+        font-size: 14px;
+        line-height: 140%;
+    }
+    .reviewer-name, .reviewer-text {
+        font-size: 16px;
+        color: #545454;
+    }
+    .trusted-vets-section{
+        margin-top: 50px;
+        padding-left: 15px;
+        & .container {
+            padding: 0;
+        }
+    }
+    .why-card-text h3 {
+        font-size: 20px !important;
+    }
+    .step-text h3 {font-size: 20px !important;}
+    .how-it-works-section {
+        padding: 0;
+        & a {
+            font-size: 14px;
+        }
+    } 
+    .why-choose-us-section {
+        padding: 50px 0;
+    }
+    .faq-question span {
+        font-size: 20px;
+    }
+    .faq-answer {
+        font-size: 14px;
+        color: #545454;
+    }
+    .cta-section {
+        padding: 0;
+    }
+    .footer-about-content {
+        font-size: 14px;
+        width:100%
+    }
+    .link-footer {
+        padding: 0;
+    }
+    .cta-gradient {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%);
+    }
+    .cta-content {
+        width: 90%;
+        top: 73%;
+        position: relative;
+        left: 7%;
+    }
+    .cta-section .btn-warning {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .image-hero {
+        width: auto;
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+        left: -28%;
+    }
+    .hero-title {
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 120%;
+        color: #252525;
+        font-family:'Poppins';
+    }
+    .hero-section {
+        height: 100%;
+    }
+    .logo {
+        width: 136px;
+        height: auto;
+    }
+    .w-action {
+        width: 100%;
+    }
+    .btn-outline-dark {
+        border-radius: 4px;
+        border: 1px solid #C3C3C3;
+    }
+    .services-section {
+        padding: 60px 30px;
+        background: #ffffff;
+    }
+    .service-card .card-image img {
+        max-width: 100%;
+        height: 298px;
+        border-radius: 8px;
+        position: relative;
+        top: -40px;
+    }
+    .service-card .card-image {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 258px;
+        padding: 10px 0;
+        padding-top: 50px;
+    }
+    .service-card .card-content h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: #252525;
+        margin-bottom: 8px;
+    }
+    .service-card .card-content p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #252525;
+        line-height: 1.4;
+    }
+    .discount-section {
+        padding: 0 30px;
+        margin: 50px 0;
+        margin-top: 100px;
+    }
+    .discount-wrapper {
+        padding: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(/uploads/images/discount_stripe.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .discount-content {
+        max-width: 50%;
+        text-align: left;
+        margin-bottom: 50%;
+    }
+    .discount-image::after {
+        position: absolute;
+        content: '';
+        width: 300px;
+        height: 300px;
+        background-color: #fff;
+        top: 117px;
+        right: 35%;
+        border-radius: 50em;
+        z-index: 1;
+        filter: blur(3.5rem);
+    }
+    .pet-problem-section {
+        position: relative;
+        width: 100%;
+        background: #fff;
+        padding: 60px 30px;
+        margin-top: 100px;
+    }
+    .pet-problem-header {
+        margin: 0 0 40px;        
+    }
+    .pet-problem-header h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+        color: #141414;
+        margin-bottom: 8px;
+    }
+    .pet-problem-header p {
+        font-size: 18px;
+        color: #545454;
+        line-height: 50%;
+        font-weight: 400;
+    }
+    .card-text h3 {
+        font-size: 20px;
+    }
+    .review-slide img {
+        float: right;
+        position: relative;
+        top: 51px;
+    }
+    .review-slide {
+        padding: 20px 0;
+    }
+    .review-carousel-section {
+        margin-top: 100px;
+        padding: 60px 30px;
+    }
+    .reviewer-dog {
+        font-size: 16px;
+        color: rgba(84, 84, 84, 0.6);
+        margin-top: 4px;
+    }
+    .reviewer-name, .reviewer-text {
+        font-size: 18px;
+        color: #545454;
+    }
+    .trusted-vets-section{
+        margin-top: 100px;
+    }
+    .step-text h3 {font-size: 20px !important;}
+    .how-it-works-section {
+        padding: 100px;
+    } 
+    .why-choose-us-section {
+        margin-top: 100px;
+    }
+    .faq-question span {
+        font-size: 24px;
+    }
+    .cta-section {
+        padding: 60px 0;
+    }
+    .footer-about-content {
+        width:100%
+    }
+    .cta-gradient {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%);
+    }
+    .cta-content {
+        max-width: 100%;
+        margin-top: 30%;
+        top: 73% !important;
+        position: relative !important;
+        left: 7%;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .image-hero {
+        width: auto;
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+        left: -28%;
+    }
+    .hero-title {
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 120%;
+        color: #252525;
+        font-family:'Poppins';
+    }
+    .hero-section {
+        height: 100vh;
+    }
+    .logo {
+        width: 136px;
+        height: auto;
+    }
+    .w-action {
+        width: 100%;
+    }
+    .btn-outline-dark {
+        border-radius: 4px;
+        border: 1px solid #C3C3C3;
+    }
+    .services-section {
+        padding: 60px 30px;
+        background: #ffffff;
+    }
+    .service-card .card-image img {
+        max-width: 100%;
+        height: 298px;
+        border-radius: 8px;
+        position: relative;
+        top: -40px;
+    }
+    .service-card .card-image {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 258px;
+        padding: 10px 0;
+        padding-top: 50px;
+    }
+    .service-card .card-content h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: #252525;
+        margin-bottom: 8px;
+    }
+    .service-card .card-content p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #252525;
+        line-height: 1.4;
+    }
+    .discount-section {
+        padding: 0 30px;
+        margin: 50px 0;
+        margin-top: 100px;
+    }
+    .discount-wrapper {
+        padding: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(/uploads/images/discount_stripe.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .discount-content {
+        max-width: 50%;
+        text-align: left;
+        margin-bottom: 50%;
+    }
+    .discount-image::after {
+        position: absolute;
+        content: '';
+        width: 300px;
+        height: 300px;
+        background-color: #fff;
+        top: 117px;
+        right: 35%;
+        border-radius: 50em;
+        z-index: 1;
+        filter: blur(3.5rem);
+    }
+    .pet-problem-section {
+        position: relative;
+        width: 100%;
+        background: #fff;
+        padding: 60px 30px;
+        margin-top: 100px;
+    }
+    .pet-problem-header {
+        margin: 0 0 40px;        
+    }
+    .pet-problem-header h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+        color: #141414;
+        margin-bottom: 8px;
+    }
+    .pet-problem-header p {
+        font-size: 18px;
+        color: #545454;
+        line-height: 50%;
+        font-weight: 400;
+    }
+    .card-text h3 {
+        font-size: 20px;
+    }
+    .review-slide img {
+        float: right;
+        position: relative;
+        top: 51px;
+    }
+    .review-slide {
+        padding: 20px 0;
+    }
+    .review-carousel-section {
+        margin-top: 100px;
+        padding: 60px 30px;
+    }
+    .reviewer-dog {
+        font-size: 16px;
+        color: rgba(84, 84, 84, 0.6);
+        margin-top: 4px;
+    }
+    .reviewer-name, .reviewer-text {
+        font-size: 18px;
+        color: #545454;
+    }
+    .trusted-vets-section{
+        margin-top: 100px;
+    }
+    .step-text h3 {font-size: 24px !important;}
+    .how-it-works-section {
+        padding: 100px;
+    }
+    .why-choose-us-section {
+        margin-top: 100px;
+    }
+    .faq-question span {
+        font-size: 24px;
+    }
+    .cta-section {
+        padding: 60px 0;
+    }
+    .footer-about-content {
+        width:100%
+    }
+    .cta-gradient {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%);
+    }
+    .cta-content {
+        position: relative !important;
+        left: 7% !important;
+        max-width: 100% !important;
+        top: 73% !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .image-hero {
+        width: auto;
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+        left: -28%;
+    }
+    .hero-title {
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 120%;
+        color: #252525;
+        font-family:'Poppins';
+    }
+    .hero-section {
+        height: 100vh;
+    }
+    .logo {
+        width: 136px;
+        height: auto;
+    }
+    .w-action {
+        width: auto;
+    }
+    .btn-outline-dark {
+        border-radius: 4px;
+        border: 1px solid #C3C3C3;
+    }
+    .services-section {
+        padding: 0;
+        background: #ffffff;
+    }
+    .service-card .card-image img {
+        max-width: 100%;
+        height: 298px;
+        border-radius: 8px;
+        position: relative;
+        top: -40px;
+    }
+    .service-card .card-image {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 258px;
+        padding: 10px 0;
+        padding-top: 50px;
+    }
+    .service-card .card-content h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        color: #252525;
+        margin-bottom: 8px;
+    }
+    .service-card .card-content p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #252525;
+        line-height: 1.4;
+    }
+    .discount-section {
+        padding-top: 70px;
+        margin-top: 100px;
+    }
+    .discount-wrapper {
+        padding: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(/uploads/images/discount_stripe.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .discount-content {
+        max-width: 50%;
+        text-align: left;
+    }
+    .discount-image::after {
+        position: absolute;
+        content: '';
+        width: 300px;
+        height: 300px;
+        background-color: #fff;
+        top: 117px;
+        right: 35%;
+        border-radius: 50em;
+        z-index: 1;
+        filter: blur(3.5rem);
+    }
+    .pet-problem-section {
+        position: relative;
+        width: 100%;
+        background: #fff;
+        padding: 60px 30px;
+        margin-top: 100px;
+    }
+    .pet-problem-header {
+        margin: 0 0 40px;        
+    }
+    .pet-problem-header h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+        color: #141414;
+        margin-bottom: 8px;
+    }
+    .pet-problem-header p {
+        font-size: 18px;
+        color: #545454;
+        line-height: 50%;
+        font-weight: 400;
+    }
+    .card-text h3 {
+        font-size: 24px;
+    }
+    .review-slide img {
+        float: right;
+        position: relative;
+        top: 51px;
+    }
+    .review-slide {
+        padding: 20px 0;
+    }
+    .review-carousel-section {
+        margin-top: 100px;
+        padding: 60px 30px;
+    }
+    .reviewer-dog {
+        font-size: 16px;
+        color: rgba(84, 84, 84, 0.6);
+        margin-top: 4px;
+    }
+    .reviewer-name, .reviewer-text {
+        font-size: 18px;
+        color: #545454;
+    }
+    .trusted-vets-section{
+        margin-top: 100px;
+    }
+    .step-text h3 {font-size: 24px !important;}
+    .how-it-works-section {
+        padding: 100px;
+    }
+    .why-choose-us-section {
+        margin-top: 100px;
+        padding: 100px 0;
+    }
+    .faq-question span {
+        font-size: 24px;
+    }
+    .faq-answer {
+        color: #545454;
+    }
+    .cta-section {
+        padding: 60px 0;
+    }
+    .footer-about-content {
+        width:75%
+    }
+    .cta-gradient {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%);
+    }
+    .cta-content {
+        width: 37%;
+        top: 44%;
+        position: relative;
+        left: 5%;
+    }
+    .cta-gradient {top: 35px !important;}
+}
