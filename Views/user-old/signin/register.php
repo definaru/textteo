@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TextTeo AI</title>
+  <!-- External Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/toastr_2.1.3/toastr.css">
+</head>
+
+<body>
+<!-- ======================== -->
+<!-- HEADER -->
+<!-- ======================== -->
+<header class="header-wrapper">
+  <div class="header-container">
+    <!-- Mobile Menu Icon (Only visible on mobile/tablet) -->
+    <button id="menu-icon" class="menu-icon d-lg-none" aria-label="Toggle Menu">
+      <img src="assets/images/Icon svg/Interface icon/all/menu.svg" alt="Menu icon" />
+    </button>
+
+    <!-- Desktop Layout -->
+    <div class="desktop-layout d-none d-lg-flex">
+      <div class="header-left">
+        <div class="logo">
+          <a href="/"><img src="assets/images/logo.png" alt="TextTeo logo" /></a>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#pet-problem-section">Help now</a></li>
+          <li><a href="#review-carousel-section">Testimonials</a></li>
+          <li><a href="#trusted-vets-section">Our vets</a></li>
+          <li><a href="#how-it-works-section">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Mobile/Tablet Layout -->
+    <div class="mobile-layout d-lg-none">
+      <div class="logo-center">
+        <img src="assets/images/logo.png" alt="TextTeo logo" />
+      </div>
+    </div>
+
+    <!-- Right Group (Desktop & Mobile) -->
+    <div class="header-right">
+      <a class="btn-login" href="/login">
+        <i class="far fa-user"></i>
+      </a>
+
+      <a href="/search-veterinary?type=6"><button class="btn-book-now d-none d-lg-block">Book Now</button></a>
+
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-nav" class="mobile-nav">
+      <div class="mobile-nav-header">
+        <button id="menu-icon2" class="menu-icon d-lg-none" aria-label="Toggle Menu">
+          <img src="assets/images/Icon svg/Interface icon/all/menu.svg" alt="Menu icon" />
+        </button>
+        <div class="mobile-nav-logo">
+          <img src="assets/images/logo.png" alt="TextTeo logo" />
+        </div>
+      </div>
+      <ul>
+        <li><a href="#pet-problem-section" class="close-menu">Help now</a></li>
+        <li><a href="#review-carousel-section" class="close-menu">Testimonials</a></li>
+        <li><a href="#trusted-vets-section" class="close-menu">Our vets</a></li>
+        <li><a href="#how-it-works-section" class="close-menu">How it works</a></li>
+        <li><a href="#faq" class="close-menu">FAQ</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <button class="btn-mobile-book close-menu">BOOK NOW</button>
+        <button class="btn-mobile-login close-menu">LOG IN</button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    <div id="mobile-nav-overlay" class="mobile-nav-overlay"></div>
+  </div>
+</header>
+
+<!-- ======================== -->
+<!-- CREATE ACCOUNT SECTION -->
+<!-- ======================== -->
+<section class="create-account-section py-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <!-- Left Column: Illustration (hidden on small screens) -->
+      <div class="col-12 col-md-6 d-none d-md-block mb-4 mb-md-0 text-md-start">
+        <img src="assets/images/create-account.png" alt="Registration Illustration" class="img-fluid"
+             style="max-width: 480px;" />
+      </div>
+
+      <!-- Right Column: Form Card -->
+      <div class="col-12 col-md-6">
+        <div class="card p-4 shadow-sm border-0">
+          <h2 class="mb-3">Create an account</h2>
+          <p class="mb-4 text-muted">
+            Enter the email to which you will register
+          </p>
+
+          <!-- The form that wraps phone input and button -->
+          <form method="post" id="register_form" autocomplete="off" action="#">
+            <input type="hidden" id="role" name="role" value="2">
+            <input type="hidden" id="country_id" name="country_id">
+            <input type="hidden" name="password" id="password" value="!Q1w2e3zaxscd">
+            <!-- Phone Number Input -->
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email *"
+                     required />
+            </div>
+            <!-- Phone Number Input -->
+            <!-- Submit button linking to code.html -->
+            <button type="submit" class="btn btn-warning w-100 mb-3">
+              Register
+            </button>
+          </form>
+
+          <!-- Already have an account? Log in -->
+          <!-- Center on small screens, left on md+ -->
+          <div class="mb-3 text-center text-md-start">
+            Have an account?
+            <a href="/login" class="text-warning fw-semibold">
+              Log in
+            </a>
+          </div>
+        </div><!-- end .card -->
+      </div><!-- end col -->
+    </div><!-- end row -->
+  </div><!-- end container -->
+</section>
+
+<!-- ======================== -->
+<!-- FOOTER SECTION -->
+<!-- ======================== -->
+<footer class="footer-section bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row justify-content-between align-items-start">
+      <!-- Left Column: Logo, short text, and Sign Up button -->
+      <div class="col-12 col-md-6 mb-4">
+        <!-- Logo -->
+        <div class="mb-3">
+          <img src="assets/images/logo-white.png" alt="TextTeo Logo" class="img-fluid"
+               style="max-width: 180px;" />
+        </div>
+
+        <!-- Short paragraph (added 'logo-paragraph' class) -->
+        <p class="mb-4 logo-paragraph">
+          We understand that your pet's health is a priority, and accessing veterinary care should be convenient and reliable.  Please reach out to us for collaborations 
+          <a href= "mailto:marketing@textteo.com">marketing@textteo.com</a>
+        </p>
+
+        <!-- Sign Up button -->
+        <a href="/register"><button class="btn btn-outline-light fw-semibold text-uppercase px-4 py-2 sign-up-btn">
+          Sign Up
+        </button></a>
+      </div>
+
+      <div class="col-12 col-md-6 mb-4">
+        <div class="row justify-content-center align-items-start">
+          <!-- Middle Column: For Clients section -->
+          <div class="col-12 col-sm-6 col-md-6 mb-4">
+            <h5 class="fw-semibold text-white mb-3">For Clients</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="/search-veterinary" class="footer-link">Search for Veterinarians</a>
+              </li>
+              <li class="mb-2">
+                <a href="/login" class="footer-link">My account</a>
+              </li>
+              <li class="mb-2">
+                <a href="/register" class="footer-link">New Customer</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Column: Contact info -->
+          <div class="col-12 col-sm-6 col-md-6 mb-4">
+            <h5 class="fw-semibold text-white mb-3">Contact</h5>
+            <!-- Address -->
+            <div class="d-flex mb-3">
+              <!--<div class="me-2">
+                <i class="fa-solid fa-crosshairs" style="color: #d7d7d7;"></i>
+              </div>-->
+              <!--<div>
+                Gate Avenu - South Zone, DIFC<br />
+                Innovation hub, Dubai, UAE
+              </div>-->
+            </div>
+            <!-- Email -->
+            <div class="d-flex mb-3">
+              <div class="me-2">
+                <i class="fa-regular fa-envelope" style="color: #d7d7d7;"></i>
+              </div>
+              <div><a href= "mailto:info@textteo.com">info@textteo.com</a></div>
+            </div>
+            <!-- Social Icons row -->
+            <div class="d-flex gap-3">
+              <a href="https://www.instagram.com/textteo_ai" class="footer-social-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://chat.whatsapp.com/BYePyNVoPdbEM6ZF9I4Dzb" class="footer-social-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://twitter.com/textteo_ai" class="footer-social-icon">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://t.me/+cSzA1cz98TRhYTM0" class="footer-social-icon">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/textteo-ai/" class="footer-social-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- end row -->
+
+    <!-- Horizontal line -->
+    <hr class="text-secondary opacity-50" />
+
+    <!-- Bottom row: reorder columns on mobile so copyright is last -->
+    <div class="row justify-content-between align-items-center">
+      <div class="col-auto d-flex gap-4 order-1 order-md-2 mb-2 mb-md-0">
+        <a href="/terms-conditions" class="footer-link border-bottom border-secondary pb-1">
+          Terms and conditions
+        </a>
+        <!--<a href="/privacy-policy" class="footer-link border-bottom border-secondary pb-1">
+          Privacy Policy
+        </a>-->
+      </div>
+      <div class="col-auto order-2 order-md-1 text-secondary text-center text-md-start">
+        <small>© 2025 TextTeo. All rights reserved.</small>
+      </div>
+    </div>
+  </div><!-- end container -->
+</footer>
+
+
+<!-- ======================== -->
+<!-- SCRIPTS -->
+<!-- ======================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script type="text/javascript">
+  var base_url='<?php echo base_url();?>';
+  var modules='<?php
+      /** @var string $module */
+      /** @var string $page */
+
+      echo $module;?>';
+  var pages='<?php echo $page;?>';
+  var roles='<?php echo session()->get('role');?>';
+
+  var lang_patient="<?php
+      /** @var array $language */
+      echo $language['lg_patient4'] ?? ' ';?>";
+  var lang_doctor="<?php echo $language['lg_doctor2'] ?? ' ';?>";
+  var lg_please_enter_yo="<?php echo $language['lg_please_enter_yo'] ?? ' ';?>";
+  var lg_please_enter_yo1="<?php echo $language['lg_please_enter_yo1'] ?? ' ';?>";
+  var lg_please_enter_mo="<?php echo $language['lg_please_enter_mo'] ?? ' ';?>";
+  var lg_please_enter_va="<?php echo $language['lg_please_enter_va'] ?? ' ';?>";
+  var lg_your_mobile_no_="<?php echo $language['lg_your_mobile_no_'] ?? ' ';?>";
+  var lg_please_enter_em="<?php echo $language['lg_please_enter_em'] ?? ' ';?>";
+  var lg_please_enter_va1="<?php echo $language['lg_please_enter_va1'] ?? ' ';?>";
+  var lg_your_email_addr1="<?php echo $language['lg_your_email_addr1'] ?? ' ';?>";
+  var lg_please_enter_pa="<?php echo $language['lg_please_enter_pa'] ?? ' ';?>";
+  var lg_please_enter_new_pa="<?php echo $language['lg_please_enter_new_pa'] ?? ' ';?>";
+  var lg_your_password_m="<?php echo $language['lg_your_password_m'] ?? ' ';?>";
+  var lg_your_password_max="<?php echo $language['lg_your_password_max'] ?? ' ';?>";
+  var lg_please_enter_co="<?php echo $language['lg_please_enter_co'] ?? ' ';?>";
+  var lg_your_password_d="<?php echo $language['lg_your_password_d'] ?? ' ';?>";
+  var lg_signup="<?php echo $language['lg_signup'] ?? ' ';?>";
+  var lg_signin="<?php echo $language['lg_signin'] ?? ' ';?>";
+  var lg_your_email_addr="<?php echo $language['lg_your_email_addr'] ?? ' ';?>";
+  var lg_reset_password="<?php echo $language['lg_reset_password'] ?? ' ';?>";
+  var lg_confirm3="<?php echo $language['lg_confirm3'] ?? ' ';?>";
+  var lg_please_wait="<?php echo $language['lg_please_wait'] ?? ' ';?>";
+  var lg_select_country="<?php echo $language['lg_select_country'] ?? ' ';?>";
+  var lg_select_state="<?php echo $language['lg_select_state'] ?? ' ';?>";
+  var lg_select_city="<?php echo $language['lg_select_city'] ?? ' ';?>";
+  var lg_select_speciali1="<?php echo $language['lg_select_speciali1'] ?? ' ';?>";
+  var lg_please_select_g="<?php echo $language['lg_please_select_g'] ?? ' ';?>";
+  var lg_please_enter_yo2="<?php echo $language['lg_please_enter_yo2'] ?? ' ';?>";
+  var lg_please_enter_yo3="<?php echo $language['lg_please_enter_yo3'] ?? ' ';?>";
+  var lg_please_enter_yo4="<?php echo $language['lg_please_enter_yo4'] ?? ' ';?>";
+  var lg_please_select_c="<?php echo $language['lg_please_select_c'] ?? ' ';?>";
+  var lg_please_select_c_code="<?php echo $language['lg_please_select_c_code'] ?? ' ';?>";
+  var lg_please_select_s="<?php echo $language['lg_please_select_s'] ?? ' ';?>";
+  var lg_enter_address_max="<?php echo $language['lg_enter_address_max'] ?? ' ';?>";
+  var lg_please_select_c1="<?php echo $language['lg_please_select_c1'] ?? ' ';?>";
+  var lg_please_enter_po="<?php echo $language['lg_please_enter_po'] ?? ' ';?>";
+  var lg_please_enter_va2="<?php echo $language['lg_please_enter_va2'] ?? ' ';?>";
+  var lg_please_select_p="<?php echo $language['lg_please_select_p'] ?? ' ';?>";
+  var lg_please_enter_am="<?php echo $language['lg_please_enter_am'] ?? ' ';?>";
+  var lg_please_enter_va3="<?php echo $language['lg_please_enter_va3'] ?? ' ';?>";
+  var lg_please_enter_se="<?php echo $language['lg_please_enter_se'] ?? ' ';?>";
+  var lg_please_select_s1="<?php echo $language['lg_please_select_s1'] ?? ' ';?>";
+  var lg_please_enter_de="<?php echo $language['lg_please_enter_de'] ?? ' ';?>";
+  var lg_please_enter_in="<?php echo $language['lg_please_enter_in'] ?? ' ';?>";
+  var lg_please_enter_ye="<?php echo $language['lg_please_enter_ye'] ?? ' ';?>";
+  var lg_please_select_b="<?php echo $language['lg_please_select_b'] ?? ' ';?>";
+  var lg_dr="<?php echo $language['lg_dr'] ?? ' ';?>";
+  var lg_no_users_found="<?php echo $language['lg_no_users_found'] ?? ' ';?>";
+  var lg_feedback="<?php echo $language['lg_feedback'] ?? ' ';?>";
+  var lg_view_profile="<?php echo $language['lg_view_profile'] ?? ' ';?>";
+  var lg_book_appointmen="<?php echo $language['lg_book_appointmen'] ?? ' ';?>";
+  var lg_no_doctors_foun="<?php echo $language['lg_no_doctors_foun'] ?? ' ';?>";
+  var lg_more="<?php echo $language['lg_more'] ?? ' ';?>";
+  var lg_less="<?php echo $language['lg_less'] ?? ' ';?>";
+  var lg_matches_for_you="<?php echo $language['lg_matches_for_you'] ?? ' ';?>";
+  var lg_patient_id="<?php echo $language['lg_patient_id'] ?? ' ';?>";
+  var lg_phone="<?php echo $language['lg_phone'] ?? ' ';?>";
+  var lg_age="<?php echo $language['lg_age'] ?? ' ';?>";
+  var lg_blood_group="<?php echo $language['lg_blood_group'] ?? ' ';?>";
+  var lg_no_patients_fou="<?php echo $language['lg_no_patients_fou'] ?? ' ';?>";
+  var lg_are_you_sure_to="<?php echo $language['lg_are_you_sure_to'] ?? ' ';?>";
+  var lg_your_existing_s="<?php echo $language['lg_your_existing_s'] ?? ' ';?>";
+  var lg_please_select_f="<?php echo $language['lg_please_select_f'] ?? ' ';?>";
+  var lg_please_select_t="<?php echo $language['lg_please_select_t'] ?? ' ';?>";
+  var lg_please_select_t1="<?php echo $language['lg_please_select_t1'] ?? ' ';?>";
+  var lg_please_select_s2="<?php echo $language['lg_please_select_s2'] ?? ' ';?>";
+  var lg_add10="<?php echo $language['lg_add10'] ?? ' ';?>";
+  var lg_select_time="<?php echo $language['lg_select_time'] ?? ' ';?>";
+  var lg_date_is_require="<?php echo $language['lg_date_is_require'] ?? ' ';?>";
+  var lg_dob_is_require="<?php echo $language['lg_dob_is_require'] ?? ' '; ?>";
+  var lg_please_select_a="<?php echo $language['lg_please_select_a'] ?? ' ';?>";
+  var lg_appoinment_requ="<?php echo $language['lg_appoinment_requ'] ?? ' ';?>";
+  var lg_please_accept_t="<?php echo $language['lg_please_accept_t'] ?? ' ';?>";
+  var lg_transaction_suc="<?php echo $language['lg_transaction_suc'] ?? ' ';?>";
+  var lg_transaction_fai1="<?php echo $language['lg_transaction_fai1'] ?? ' ';?>";
+  var lg_sno="<?php echo $language['lg_sno'] ?? ' ';?>";
+  var lg_drug_name="<?php echo $language['lg_drug_name'] ?? ' ';?>";
+  var lg_quantity="<?php echo $language['lg_quantity'] ?? ' ';?>";
+  var lg_type="<?php echo $language['lg_type'] ?? ' ';?>";
+  var lg_days="<?php echo $language['lg_days'] ?? ' ';?>";
+  var lg_time="<?php echo $language['lg_time'] ?? ' ';?>";
+  var lg_doctor_signatur="<?php echo $language['lg_doctor_signatur'] ?? ' ';?>";
+  var lg_prescription="<?php echo $language['lg_prescription'] ?? ' ';?>";
+  var lg_name="<?php echo $language['lg_name'] ?? ' ';?>";
+  var lg_description="<?php echo $language['lg_description'] ?? ' ';?>";
+  var lg_amount="<?php echo $language['lg_amount'] ?? ' ';?>";
+  var lg_doctor_billing="<?php echo $language['lg_doctor_billing'] ?? ' ';?>";
+  var lg_bill4="<?php echo $language['lg_bill4'] ?? ' ';?>";
+  var lg_please_upload_m="<?php echo $language['lg_please_upload_m'] ?? ' ';?>";
+  var lg_file_size_must_="<?php echo $language['lg_file_size_must_'] ?? ' ';?>";
+  var lg_submit="<?php echo $language['lg_submit'] ?? ' ';?>";
+  var lg_medical_records="<?php echo $language['lg_medical_records'] ?? ' ';?>";
+  var lg_yes="<?php echo $language['lg_yes'] ?? ' ';?>";
+  var lg_save="<?php echo $language['lg_save'] ?? ' ';?>";
+  var lg_select_type="<?php echo $language['lg_select_type'] ?? ' ';?>";
+  var lg_before_food="<?php echo $language['lg_before_food'] ?? ' ';?>";
+  var lg_after_food="<?php echo $language['lg_after_food'] ?? ' ';?>";
+  var lg_morning="<?php echo $language['lg_morning'] ?? ' ';?>";
+  var lg_afternoon="<?php echo $language['lg_afternoon'] ?? ' ';?>";
+  var lg_evening="<?php echo $language['lg_evening'] ?? ' ';?>";
+  var lg_night="<?php echo $language['lg_night'] ?? ' ';?>";
+  var lg_please_enter_dr="<?php echo $language['lg_please_enter_dr'] ?? ' ';?>";
+  var lg_please_enter_qt="<?php echo $language['lg_please_enter_qt'] ?? ' ';?>";
+  var lg_please_enter_da="<?php echo $language['lg_please_enter_da'] ?? ' ';?>";
+  var lg_please_select_t2="<?php echo $language['lg_please_select_t2'] ?? ' ';?>";
+  var lg_please_sign_to_="<?php echo $language['lg_please_sign_to_'] ?? ' ';?>";
+  var lg_update="<?php echo $language['lg_update'] ?? ' ';?>";
+  var lg_please_enter_na="<?php echo $language['lg_please_enter_na'] ?? ' ';?>";
+  var lg_please_enter_cu="<?php echo $language['lg_please_enter_cu'] ?? ' ';?>";
+  var lg_your_current_pa="<?php echo $language['lg_your_current_pa'] ?? ' ';?>";
+  var lg_change_password="<?php echo $language['lg_change_password'] ?? ' ';?>";
+  var lg_accept="<?php echo $language['lg_accept'] ?? ' ';?>";
+  var lg_cancel="<?php echo $language['lg_cancel'] ?? ' ';?>";
+  var lg_view1="<?php echo $language['lg_view1'] ?? ' ';?>";
+  var lg_no_appoinments_="<?php echo $language['lg_no_appoinments_'] ?? ' ';?>";
+  var lg_cancelled="<?php echo $language['lg_cancelled'] ?? ' ';?>";
+  var lg_day1="<?php echo $language['lg_day1'] ?? ' ';?>";
+  var lg_days="<?php echo $language['lg_days'] ?? ' ';?>";
+  var lg_remaining_time_="<?php echo $language['lg_remaining_time_'] ?? ' ';?>";
+  var lg_conversation_wi="<?php echo $language['lg_conversation_wi'] ?? ' ';?>";
+  var lg_add_review="<?php echo $language['lg_add_review'] ?? ' ';?>";
+  var lg_thank_you_for_y="<?php echo $language['lg_thank_you_for_y'] ?? ' ';?>";
+  var lg_please_wait__="<?php echo $language['lg_please_wait__'] ?? ' ';?>";
+  var lg_thats_all="<?php echo $language['lg_thats_all'] ?? ' ';?>";
+  var lg_download="<?php echo $language['lg_download'] ?? ' ';?>";
+  var lg_load_more="<?php echo $language['lg_load_more'] ?? ' ';?>";
+  var lg_degree="<?php echo $language['lg_degree'] ?? ' ';?>";
+  var lg_collegeinstitut="<?php echo $language['lg_collegeinstitut'] ?? ' ';?>";
+  var lg_year_of_complet="<?php echo $language['lg_year_of_complet'] ?? ' ';?>";
+  var lg_hospital_name="<?php echo $language['lg_hospital_name'] ?? ' ';?>";
+  var lg_from="<?php echo $language['lg_from'] ?? ' ';?>";
+  var lg_to3="<?php echo $language['lg_to3'] ?? ' ';?>";
+  var lg_designation="<?php echo $language['lg_designation'] ?? ' ';?>";
+  var lg_awards="<?php echo $language['lg_awards'] ?? ' ';?>";
+  var lg_year="<?php echo $language['lg_year'] ?? ' ';?>";
+  var lg_memberships="<?php echo $language['lg_memberships'] ?? ' ';?>";
+  var lg_registrations="<?php echo $language['lg_registrations'] ?? ' ';?>";
+  var lg_save_changes="<?php echo $language['lg_save_changes'] ?? ' ';?>";
+  var lg_first_name_shou="<?php echo $language['lg_first_name_shou'] ?? ' ';?>";
+  var lg_last_name_shoul="<?php echo $language['lg_last_name_shoul'] ?? ' ';?>";
+  var lg_first_name_shou_max15="<?php echo $language['lg_first_name_shou_max15'] ?? ' ';?>";
+  var lg_last_name_shou1_max15="<?php echo $language['lg_last_name_shou1_max15'] ?? ' ';?>";
+
+  var lg_number_should_b="<?php echo $language['lg_number_should_b'] ?? ' ';?>";
+  var lg_number_should_b1="<?php echo $language['lg_number_should_b1'] ?? ' ';?>";
+  var lg_digits_are_only="<?php echo $language['lg_digits_are_only'] ?? ' ';?>";
+
+  var lg_calling_="<?php echo $language['lg_calling_'] ?? ' ';?>";
+  var lg_error_posting_f="<?php echo $language['lg_error_posting_f'] ?? ' ';?>";
+  var lg_add_category="<?php echo $language['lg_add_category'] ?? ' ';?>";
+  var lg_edit_category="<?php echo $language['lg_edit_category'] ?? ' ';?>";
+  var lg_delete_rw="<?php echo $language['lg_delete_rw'] ?? ' ';?>";
+  var lg_are_you_sure_de="<?php echo $language['lg_are_you_sure_de'] ?? ' ';?>";
+  var lg_category_delete="<?php echo $language['lg_category_delete'] ?? ' ';?>";
+  var lg_please_enter_ca="<?php echo $language['lg_please_enter_ca'] ?? ' ';?>";
+  var lg_select_category="<?php echo $language['lg_select_category'] ?? ' ';?>";
+  var lg_add_subcategory="<?php echo $language['lg_add_subcategory'] ?? ' ';?>";
+  var lg_edit_subcategor="<?php echo $language['lg_edit_subcategor'] ?? ' ';?>";
+  var lg_are_you_sure_de1="<?php echo $language['lg_are_you_sure_de1'] ?? ' ';?>";
+  var lg_subcategory_del="<?php echo $language['lg_subcategory_del'] ?? ' ';?>";
+  var lg_please_select_c2="<?php echo $language['lg_please_select_c2'] ?? ' ';?>";
+  var lg_please_enter_su="<?php echo $language['lg_please_enter_su'] ?? ' ';?>";
+  var lg_are_you_sure_de2="<?php echo $language['lg_are_you_sure_de2'] ?? ' ';?>";
+  var lg_post_deleted_su="<?php echo $language['lg_post_deleted_su'] ?? ' ';?>";
+  var lg_select_subcateg="<?php echo $language['lg_select_subcateg'] ?? ' ';?>";
+  var lg_no_blogs_found="<?php echo $language['lg_no_blogs_found'] ?? ' ';?>";
+  var lg_post1="<?php echo $language['lg_post1'] ?? ' ';?>";
+  var lg_please_enter_bl="<?php echo $language['lg_please_enter_bl'] ?? ' ';?>";
+  var lg_please_select_b1="<?php echo $language['lg_please_select_b1'] ?? ' ';?>";
+  var lg_please_select_b2="<?php echo $language['lg_please_select_b2'] ?? ' ';?>";
+  var lg_please_upload_b="<?php echo $language['lg_please_upload_b'] ?? ' ';?>";
+  var lg_please_enter_bl1="<?php echo $language['lg_please_enter_bl1'] ?? ' ';?>";
+  var lg_warning="<?php echo $language['lg_warning'] ?? ' ';?>";
+  var lg_are_you_sure_yo="<?php echo $language['lg_are_you_sure_yo'] ?? ' ';?>";
+  var lg_comment3="<?php echo $language['lg_comment3'] ?? ' ';?>";
+  var lg_reply="<?php echo $language['lg_reply'] ?? ' ';?>";
+  var lg_please_upload_s="<?php echo $language['lg_please_upload_s'] ?? ' ';?>";
+  var lg_invalid_extensi="<?php echo $language['lg_invalid_extensi'] ?? ' ';?>";
+  var lg_done="<?php echo $language['lg_done'] ?? ' ';?>";
+  var lg_please_upload_s1="<?php echo $language['lg_please_upload_s1'] ?? ' ';?>";
+  var lg_resend_otp="<?php echo $language['lg_resend_otp'] ?? ' ';?>";
+  var lg_please_enter_ke="<?php echo $language['lg_please_enter_ke'] ?? ' ';?>";
+  var lg_location2="<?php echo $language['lg_location2'] ?? ' ';?>";
+  var lg_no_city_found="<?php echo $language['lg_no_city_found'] ?? ' ';?>";
+  var lg_speciality="<?php echo $language['lg_speciality'] ?? ' ';?>";
+  var lg_specialist="<?php echo $language['lg_specialist'] ?? ' ';?>";
+  var lg_no_doctors_foun1="<?php echo $language['lg_no_doctors_foun1'] ?? ' ';?>";
+  var lg_select_country_="<?php echo $language['lg_select_country_'] ?? ' ';?>";
+  var lg_please_enter_ph="<?php echo $language['lg_please_enter_ph'] ?? ' ';?>";
+  var lg_pharmacy_detail="<?php echo $language['lg_pharmacy_detail'] ?? ' ';?>";
+  var lg_something_went_1="<?php echo $language['lg_something_went_1'] ?? ' ';?>";
+  var lg_view_more="<?php echo $language['lg_view_more'] ?? ' ';?>";
+  var lg_session="<?php echo $language['lg_session'] ?? ' ';?>";
+  var lg_start_time="<?php echo $language['lg_start_time'] ?? ' ';?>";
+  var lg_end_time="<?php echo $language['lg_end_time'] ?? ' ';?>";
+  var lg_no_of_tokens="<?php echo $language['lg_no_of_tokens'] ?? ' ';?>";
+  var lg_start_time_is_r="<?php echo $language['lg_start_time_is_r'] ?? ' ';?>";
+  var lg_end_time_is_req="<?php echo $language['lg_end_time_is_req'] ?? ' ';?>";
+  var lg_please_choose_a="<?php echo $language['lg_please_choose_a'] ?? ' ';?>";
+  var lg_please_select_a1="<?php echo $language['lg_please_select_a1'] ?? ' ';?>";
+  var lg_proceed_to_pay="<?php echo $language['lg_proceed_to_pay'] ?? ' ';?>";
+  var lg_please_enter_em1="<?php echo $language['lg_please_enter_em1'] ?? ' ';?>";
+  var lg_please_enter_yo5="<?php echo $language['lg_please_enter_yo5'] ?? ' ';?>";
+  var lg_please_enter_yo6="<?php echo $language['lg_please_enter_yo6'] ?? ' ';?>";
+  var lg_name_is_require="<?php echo $language['lg_name_is_require'] ?? ' ';?>";
+  var lg_email_is_requir="<?php echo $language['lg_email_is_requir'] ?? ' ';?>";
+  var lg_mobile_no_is_re="<?php echo $language['lg_mobile_no_is_re'] ?? ' ';?>";
+  var lg_address1_is_req="<?php echo $language['lg_address1_is_req'] ?? ' ';?>";
+  var lg_country_is_requ="<?php echo $language['lg_country_is_requ'] ?? ' ';?>";
+  var lg_state_is_requir="<?php echo $language['lg_state_is_requir'] ?? ' ';?>";
+  var lg_city_is_require="<?php echo $language['lg_city_is_require'] ?? ' ';?>";
+  var lg_postal_code_is_="<?php echo $language['lg_postal_code_is_'] ?? ' ';?>";
+  var lg_your_order_has_="<?php echo $language['lg_your_order_has_'] ?? ' ';?>";
+  var lg_confirm_and_pay="<?php echo $language['lg_confirm_and_pay'] ?? ' ';?>";
+  var lg_confirm_and_pay2="<?php echo $language['lg_confirm_and_pay2'] ?? ' ';?>";
+  var lg_activation_mail="<?php echo $language['lg_activation_mail'] ?? ' ';?>";
+  var lg_please_enter_ba="<?php echo $language['lg_please_enter_ba'] ?? ' ';?>";
+  var lg_please_enter_br="<?php echo $language['lg_please_enter_br'] ?? ' ';?>";
+  var lg_please_enter_ac1="<?php echo $language['lg_please_enter_ac1'] ?? ' ';?>";
+  var lg_please_enter_ac2="<?php echo $language['lg_please_enter_ac2'] ?? ' ';?>";
+  var lg_request1="<?php echo $language['lg_request1'] ?? ' ';?>";
+  var lg_no_products_fou="<?php echo $language['lg_no_products_fou'] ?? ' ';?>";
+  var lg_select_services="<?php echo $language['lg_select_services'] ?? ' ';?>";
+  var lg_select_gender="<?php echo $language['lg_select_gender'] ?? ' ';?>";
+  var lg_search3="<?php echo $language['lg_search3'] ?? ' ';?>";
+  var lg_view_details="<?php echo $language['lg_view_details'] ?? ' ';?>";
+  var lg_browse_products="<?php echo $language['lg_browse_products'] ?? ' ';?>";
+  var lg_no_pharmacy_fou="<?php echo $language['lg_no_pharmacy_fou'] ?? ' ';?>";
+  var lg_status_updated_="<?php echo $language['lg_status_updated_'] ?? ' ';?>";
+  var lg_are_you_sure_de3="<?php echo $language['lg_are_you_sure_de3'] ?? ' ';?>";
+  var lg_product_deleted="<?php echo $language['lg_product_deleted'] ?? ' ';?>";
+  var lg_select_unit="<?php echo $language['lg_select_unit'] ?? ' ';?>";
+  var lg_please_enter_pr="<?php echo $language['lg_please_enter_pr'] ?? ' ';?>";
+  var lg_please_upload_p="<?php echo $language['lg_please_upload_p'] ?? ' ';?>";
+  var lg_please_enter_th1="<?php echo $language['lg_please_enter_th1'] ?? ' ';?>";
+  var lg_please_enter_th="<?php echo $language['lg_please_enter_th'] ?? ' ';?>";
+  var lg_please_enter_de1="<?php echo $language['lg_please_enter_de1'] ?? ' ';?>";
+  var lg_please_enter_se1="<?php echo $language['lg_please_enter_se1'] ?? ' ';?>";
+  var lg_please_enter_pr1="<?php echo $language['lg_please_enter_pr1'] ?? ' ';?>";
+  var lg_please_select_u="<?php echo $language['lg_please_select_u'] ?? ' ';?>";
+  var lg_please_enter_un="<?php echo $language['lg_please_enter_un'] ?? ' ';?>";
+  var lg_please_select_p2="<?php echo $language['lg_please_select_p2'] ?? ' ';?>";
+  var lg_please_select_p1="<?php echo $language['lg_please_select_p1'] ?? ' ';?>";
+  var lg_order_failed="<?php echo $language['lg_order_failed'] ?? ' ';?>";
+  var lg_slot="<?php echo $language['lg_slot'] ?? ' ';?>";
+  var lg_complete="<?php echo $language['lg_complete'] ?? ' ';?>";
+  var lg_please_enter_va5="<?php echo $language['lg_please_enter_va5'] ?? ' '; ?>";
+  var lg_no_clinic_found="<?php echo $language['lg_no_clinic_found'] ?? ' ';?>";
+  var lg_no_clinic_found="<?php echo $language['lg_no_clinic_found'] ?? ' '??'';?>";
+  var lg_first_name_shou_max="<?php echo $language['lg_first_name_shou_max'] ?? ' ';?>";
+  var lg_last_name_shoul_max="<?php echo $language['lg_last_name_shoul_max'] ?? ' ';?>";
+  var lg_validate_text_spaces_only="<?php echo $language['lg_validate_text_spaces_only'] ?? ' ';?>";
+  var lg_password_max_length="<?php echo $language['lg_password_max_length'] ?? ' ';?>";
+  var lg_password_max_length_20="<?php echo $language['lg_password_max_length_20'] ?? ' ';?>";
+  var lg_confirm_password_max_length="<?php echo $language['lg_confirm_password_max_length'] ?? ' ';?>";
+  var lg_confirm_password_max_length_20="<?php echo $language['lg_confirm_password_max_length_20'] ?? ' ';?>";
+  var lg_confirm_new_password="<?php echo $language['lg_confirm_new_password'] ?? ' ';?>";
+  var lg_edit_details="<?php echo $language['lg_edit_details'] ?? ' ';?>";
+  var lg_add_account_details="<?php echo $language['lg_add_account_details'] ?? ' ';?>";
+
+  // patient personal information form validation
+  var lg_pers_info_name_req="<?php echo $language['lg_pers_info_name_req'] ?? ' ';?>";
+  var lg_pers_info_name_min="<?php echo $language['lg_pers_info_name_min'] ?? ' ';?>";
+  var lg_pers_info_name_max="<?php echo $language['lg_pers_info_name_max'] ?? ' ';?>";
+  var lg_pers_info_email_req="<?php echo $language['lg_pers_info_email_req'] ?? ' ';?>";
+  var lg_pers_info_email_val="<?php echo $language['lg_pers_info_email_val'] ?? ' ';?>";
+  var lg_pers_info_mobile_req="<?php echo $language['lg_pers_info_mobile_req'] ?? ' ';?>";
+  var lg_pers_info_mobile_min="<?php echo $language['lg_pers_info_mobile_min'] ?? ' ';?>";
+  var lg_pers_info_mobile_max="<?php echo $language['lg_pers_info_mobile_max'] ?? ' ';?>";
+  var lg_pers_info_mobile_val="<?php echo $language['lg_pers_info_mobile_val'] ?? ' ';?>";
+  var lg_pers_info_address_req="<?php echo $language['lg_pers_info_address_req'] ?? ' ';?>";
+  var lg_pers_info_address_val="<?php echo $language['lg_pers_info_address_val'] ?? ' ';?>";
+  var lg_pers_info_country_req="<?php echo $language['lg_pers_info_country_req'] ?? ' ';?>";
+  var lg_pers_info_state_req="<?php echo $language['lg_pers_info_state_req'] ?? ' ';?>";
+  var lg_pers_info_city_req="<?php echo $language['lg_pers_info_city_req'] ?? ' ';?>";
+  var lg_pers_info_postalcode_req="<?php echo $language['lg_pers_info_postalcode_req'] ?? ' ';?>";
+  var lg_pers_info_postalcode_min="<?php echo $language['lg_pers_info_postalcode_min'] ?? ' ';?>";
+  var lg_pers_info_postalcode_max="<?php echo $language['lg_pers_info_postalcode_max'] ?? ' ';?>";
+  var lg_pers_info_postalcode_val="<?php echo $language['lg_pers_info_postalcode_val'] ?? ' ';?>";
+  // patient personal information form validation
+
+  // appointments rating and review validation
+  var lg_ratings_validation_title_max="<?php echo $language['lg_ratings_validation_title_max'] ?? ' ';?>";
+  var lg_ratings_validation_review_max="<?php echo $language['lg_ratings_validation_review_max'] ?? ' ';?>";
+  var lg_ratings_validation_title_val="<?php echo $language['lg_ratings_validation_title_val'] ?? ' ';?>";
+  var lg_ratings_validation_review_val="<?php echo $language['lg_ratings_validation_review_val'] ?? ' ';?>";
+  // appointments rating and review validation
+
+  var lg_accept_chars_val="<?php echo $language['lg_accept_chars_val'] ?? ' ';?>";
+  var lg_form_lab_test_testname_req="<?php echo $language['lg_form_lab_test_testname_req'] ?? ' ';?>";
+  var lg_form_lab_test_testname_max="<?php echo $language['lg_form_lab_test_testname_max'] ?? ' ';?>";
+  var lg_form_lab_test_amount_req="<?php echo $language['lg_form_lab_test_amount_req'] ?? ' ';?>";
+  var lg_form_lab_test_amount_max="<?php echo $language['lg_form_lab_test_amount_max'] ?? ' ';?>";
+  var lg_form_lab_test_duration_req="<?php echo $language['lg_form_lab_test_duration_req'] ?? ' ';?>";
+  var lg_form_lab_test_duration_max="<?php echo $language['lg_form_lab_test_duration_max'] ?? ' ';?>";
+  var lg_form_lab_test_description_req="<?php echo $language['lg_form_lab_test_description_req'] ?? ' ';?>";
+  var lg_form_lab_test_description_max="<?php echo $language['lg_form_lab_test_description_max'] ?? ' ';?>";
+  var lg_form_payment_request_requestamount_req="<?php echo $language['lg_form_payment_request_requestamount_req'] ?? ' ';?>";
+  var lg_form_payment_request_requestamount_max="<?php echo $language['lg_form_payment_request_requestamount_max'] ?? ' ';?>";
+  var lg_form_payment_request_description_req="<?php echo $language['lg_form_payment_request_description_req'] ?? ' ';?>";
+  var lg_form_payment_request_description_max="<?php echo $language['lg_form_payment_request_description_max'] ?? ' ';?>";
+</script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.validate.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/js/jquery.password-validation.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="<?php echo base_url();?>assets/js/toastr.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/user/auth.js"></script>
+</body>
+
+</html>
