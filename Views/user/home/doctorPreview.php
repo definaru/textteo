@@ -969,7 +969,7 @@
 
             $popupContent.find('.popup-slots').remove(); // Clear old clones
 
-            const $popupSlots = $('<div class="popup-slots" style="margin-top: 15px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;"></div>');
+            const $popupSlots = $('<div class="popup-slots" style="margin-top: 15px;display: grid;grid-template-columns: repeat(5, 1fr);gap: 8px;overflow-x: hidden;height: 230px;overflow-y: scroll"></div>');
 
             // Get hidden slots and clone
             $allSlots.filter(':hidden').each(function () {
