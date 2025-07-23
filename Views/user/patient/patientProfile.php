@@ -37,11 +37,10 @@
 <div class="content">
     <div class="container">
         <div class="row">
-
             <?=$user ? view('user/layout/sidebar') : '';?>
-
             <div class="col-12 <?=$user ? 'col-md-9' : 'col-md-12';?>">
 				<div class="profile-sidebar">
+
 					<div class="card border-0 bg-light m-0">
 						<div class="card-body pb-0">
 							<ul class="nav nav-tabs w-100 border-0 nav-fill" id="profileTabs" role="tablist">
@@ -251,7 +250,6 @@
 						<div class="tab-pane fade" id="password-tab_id" role="tabpanel" aria-labelledby="password-tab">
 							<div class="border-0 bg-light">
 								<div class="card-body">
-
 									<div class="card border-0 pt-0">
 										<div class="card-body p-3">
 											<form method="post" action="#" class="row g-3" autocomplete="off" id="change_password">
@@ -314,34 +312,24 @@
 											</form>
 										</div>
 									</div>
-
 								</div>
 							</div>
 						</div>
-					</div>					
-				</div>
+					</div>	
 
+				</div>
             </div>
         </div>
     </div>
 </div>
-			                
+<?php $this->endSection(); ?>
 
-					<!-- end -->
-				</div>
-
-			</div>		
-			<!-- /Page Content -->
-
-			<script src="/assets/js/bootstrap.bundle.min.js"></script>
-
-
-			<script type="text/javascript">
-				var country = '<?=$profile['country'] ?? '';?>';
-			    var state = '<?=$profile['state'] ?? '';?>';
-			    var city = '<?=$profile['city'] ?? '';?>';
-			    var country_code = '<?=$profile['country_code'] ?? '';?>';
-			</script>
-
-
+<?php $this->section('javascript'); ?>
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+	var country = '<?=$profile['country'] ?? '';?>';
+	var state = '<?=$profile['state'] ?? '';?>';
+	var city = '<?=$profile['city'] ?? '';?>';
+	var country_code = '<?=$profile['country_code'] ?? '';?>';
+</script>
 <?php $this->endSection(); ?>

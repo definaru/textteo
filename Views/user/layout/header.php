@@ -115,9 +115,9 @@
     <?=$this->include('layout/header');?>
     <?=$this->renderSection('content');?>    
     <?=$this->include('layout/footer');?>
-    <?=$this->renderSection('modal');?>
-    <?=$this->renderSection('javascript');?>
-    
+
+
+
     <!--modal Section---->
 <script type="text/javascript">
     var country = '';
@@ -209,288 +209,348 @@ if ($module == 'doctor' || $module == 'clinic' || $module == 'patient' || $modul
       </div>
     </div>
 
+
+
     <div class="modal fade custom-modal" id="assign_doctor">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title"><?=isset($language['lg_assign_doctor']) ? $language['lg_assign_doctor'] : '';?></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <ul class="info-details">
-
-
-              <?php if (session('role') == 6) { ?>
-                <li>
-
-                  <span class="text ">
-                    <input type="hidden" id="app_id_assign" class="app_id" value="">
-                    <input type="hidden" id="doctors_id_assign_date" value="">
-                    <select name="assign_doc" id="assign_doc" onchange="assign_doc()" class="form-control">
-                      <option>Select Veterinarian</option>
-                    </select>
-                    <p class="text-danger" id="assign_doc_err"></p>
-                  </span>
-                </li>
-              <?php } ?>
-            </ul>
-          </div>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <?=isset($language['lg_assign_doctor']) ? $language['lg_assign_doctor'] : '';?>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="info-details">
+                    <?php if (session('role') == 6) { ?>
+                        <li>
+                            <span class="text">
+                                <input type="hidden" id="app_id_assign" class="app_id" value="" />
+                                <input type="hidden" id="doctors_id_assign_date" value="" />
+                                <select name="assign_doc" id="assign_doc" onchange="assign_doc()" class="form-control">
+                                    <option>Select Veterinarian</option>
+                                </select>
+                                <p class="text-danger" id="assign_doc_err"></p>
+                            </span>
+                        </li>
+                    <?php } ?>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+
+
 
     <div class="modal fade custom-modal" id="appoinments_status_modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="app-modal-title"><?=isset($language['lg_accept']) ? $language['lg_accept'] : '';?></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <form method="post" action="<?=base_url('appt-change-status') ?>">
-            <input type="hidden" id="appoinments_id" name="appoinments_id">
-            <input type="hidden" id="appoinments_status" name="appoinments_status">
-
-            <div class="modal-body">
-              <p>
-                <?=isset($language['lg_are_you_sure_wa1']) ? $language['lg_are_you_sure_wa1'] : '';?> 
-                <span id="app-modal-title"></span> 
-                <?=isset($language['lg_this_appoinment']) ? $language['lg_this_appoinment'] : '';?>
-            </p>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="app-modal-title"><?=isset($language['lg_accept']) ? $language['lg_accept'] : '';?></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form method="post" action="<?=base_url('appt-change-status') ?>">
+                    <input type="hidden" id="appoinments_id" name="appoinments_id" />
+                    <input type="hidden" id="appoinments_status" name="appoinments_status" />
+                    <div class="modal-body">
+                        <p>
+                            <?=isset($language['lg_are_you_sure_wa1']) ? $language['lg_are_you_sure_wa1'] : '';?> 
+                            <span id="app-modal-title"></span> 
+                            <?=isset($language['lg_this_appoinment']) ? $language['lg_this_appoinment'] : '';?>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" id="change_btn" class="btn btn-primary">
+                            <?=isset($language['lg_yes']) ? $language['lg_yes'] : '';?>
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            <?=isset($language['lg_no6']) ? $language['lg_no6'] : '';?>
+                        </button>
+                    </div>
+                </form>
             </div>
-            <div class="modal-footer">
-                <button type="submit" id="change_btn" class="btn btn-primary">
-                    <?=isset($language['lg_yes']) ? $language['lg_yes'] : '';?>
-                </button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                    <?=isset($language['lg_no6']) ? $language['lg_no6'] : '';?>
-                </button>
-            </div>
-          </form>
         </div>
-      </div>
     </div>
+
 
     <div class="modal fade custom-modal" id="appoinments_status_complete_modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="app-modal-title">
-                <?=isset($language['lg_complete']) ? $language['lg_complete'] : '';?>
-            </h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <form method="post" action="<?=base_url('appoinments/change_complete_status') ?>">
-            <input type="hidden" id="complete_appoinments_id" name="complete_appoinments_id" />
-
-            <div class="modal-body">
-                <p>
-                    <?=isset($language['lg_are_you_sure_wa1']) ? $language['lg_are_you_sure_wa1'] : '';?> 
-                    <span id="app-complete-modal-title"></span> 
-                    <?=isset($language['lg_this_appoinment']) ? $language['lg_this_appoinment'] : '';?>
-                </p>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="app-modal-title">
+                        <?=isset($language['lg_complete']) ? $language['lg_complete'] : '';?>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form method="post" action="<?=base_url('appoinments/change_complete_status') ?>">
+                    <input type="hidden" id="complete_appoinments_id" name="complete_appoinments_id" />
+                    <div class="modal-body">
+                        <p>
+                            <?=isset($language['lg_are_you_sure_wa1']) ? $language['lg_are_you_sure_wa1'] : '';?> 
+                            <span id="app-complete-modal-title"></span> 
+                            <?=isset($language['lg_this_appoinment']) ? $language['lg_this_appoinment'] : '';?>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" id="change_complete_btn" class="btn btn-primary">
+                            <?=isset($language['lg_yes']) ? $language['lg_yes'] : '';?>
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            <?=isset($language['lg_cancel']) ? $language['lg_cancel'] : '';?>
+                        </button>
+                    </div>
+                </form>
             </div>
-            <div class="modal-footer">
-                <button type="submit" id="change_complete_btn" class="btn btn-primary">
-                    <?=isset($language['lg_yes']) ? $language['lg_yes'] : '';?>
-                </button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                    <?=isset($language['lg_cancel']) ? $language['lg_cancel'] : '';?>
-                </button>
-            </div>
-          </form>
         </div>
-      </div>
     </div>
 
-  <?php }
-  if ($page == 'checkout') {
-  ?>
+<?php } ?>
+
+<?php if ($page == 'checkout') { ?>
 
     <!-- Forgot Password Modal -->
     <div class="modal fade show" id="forgot_password_modal" role="dialog">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3><?php echo ((isset($language['lg_forgot_password'])) ? $language['lg_forgot_password'] : ""); ?></h3>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-          </div>
-          <form id="reset_password" method="post" autocomplete="off">
-            <div class="modal-body">
-              <p><?php echo ((isset($language['lg_enter_your_emai'])) ? $language['lg_enter_your_emai'] : ""); ?></p>
-              <div class="form-group form-focus">
-                <input type="email" name="resetemail" id="resetemail" class="form-control floating">
-                <label class="focus-label"><?php echo ((isset($language['lg_email'])) ? $language['lg_email'] : ""); ?></label>
-              </div>
-              <div class="text-right">
-                <a class="forgot-link" href="javascript:;" onclick="login()"><?php echo ((isset($language['lg_remember_your_p'])) ? $language['lg_remember_your_p'] : ""); ?></a>
-              </div>
-              <div class="modal-footer">
-                <button id="reset_pwd" class="btn btn-primary btn-block btn-lg login-btn" type="submit"><?php echo ((isset($language['lg_reset_password'])) ? $language['lg_reset_password'] : ""); ?></button>
-              </div>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><?=isset($language['lg_forgot_password']) ? $language['lg_forgot_password'] : '';?></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <form id="reset_password" method="post" autocomplete="off">
+                    <div class="modal-body">
+                        <p><?=isset($language['lg_enter_your_emai']) ? $language['lg_enter_your_emai'] : '';?></p>
+                        <div class="form-group form-focus">
+                            <input type="email" name="resetemail" id="resetemail" class="form-control floating" />
+                            <label class="focus-label">
+                                <?=isset($language['lg_email']) ? $language['lg_email'] : '';?>
+                            </label>
+                        </div>
+                        <div class="text-right">
+                            <a class="forgot-link" href="javascript:;" onclick="login()">
+                                <?=isset($language['lg_remember_your_p']) ? $language['lg_remember_your_p'] : '';?>
+                            </a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" id="reset_pwd" class="btn btn-primary btn-block btn-lg login-btn">
+                                <?=isset($language['lg_reset_password']) ? $language['lg_reset_password'] : '';?>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-          </form>
         </div>
-      </div>
     </div>
     <!-- /Forgot Password Modal -->
 
     <!-- Login Modal -->
     <div class="modal fade show" id="login_modal" role="dialog">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title"><?php echo ((isset($language['lg_login'])) ? $language['lg_login'] : ""); ?> <span><?php echo !empty(settings("meta_title")) ? settings("meta_title") : "Doccure"; ?></h3>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-          </div>
-          <form id="signin_form" method="post">
-            <div class="modal-body">
-              <div class="form-group form-focus">
-                <input type="text" name="email" id="login_email" class="form-control floating">
-                <label class="focus-label"><?php echo ((isset($language['lg_email_or_mobile'])) ? $language['lg_email_or_mobile'] : "") ?></label>
-              </div>
-              <div class="form-group form-focus">
-                <input type="password" name="password" id="password" class="form-control floating">
-                <label class="focus-label"><?php echo ((isset($language['lg_password'])) ? $language['lg_password'] : ""); ?></label>
-              </div>
-              <div class="text-right">
-                <a class="forgot-link" href="javascript:;" onclick="forgot_password()"><?php echo ((isset($language['lg_forgot_password'])) ? $language['lg_forgot_password'] : ""); ?></a>
-              </div>
-              <div class="modal-footer d-block pl-0 pr-0">
-
-                <button class="btn btn-primary btn-block btn-lg login-btn" id="signin_btn" type="submit"><?php echo ((isset($language['lg_signin'])) ? $language['lg_signin'] : ""); ?></button>
-                <div class="row w-100" style="margin-top: 10px;margin-bottom: 10px;">
-                  <div class="col-md-6">
-                    <button class="btn btn-social btn-google" type="button" id="googlecheckoutsigninbtn" style="width: 100%;"><i class="fab fa-google float-left"></i><?php echo ((isset($language['lg_signin'])) ? $language['lg_signin'] : ""); ?></button>
-                  </div>
-                  <div class="col-md-6">
-                    <button class="btn btn-social btn-facebook" type="button" onclick="fbcheckoutsignup()" style="width: 100%;"><i class="fab fa-facebook-f float-left"></i><?php echo ((isset($language['lg_signin'])) ? $language['lg_signin'] : ""); ?></button>
-                  </div>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">
+                        <?=isset($language['lg_login']) ? $language['lg_login'] : '';?> 
+                        <span><?=!empty(settings("meta_title")) ? settings("meta_title") : 'Doccure';?></span>
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
                 </div>
-                <div class="text-center dont-have"><?php echo ((isset($language['lg_dont_have_an_ac'])) ? $language['lg_dont_have_an_ac'] : ""); ?> <a href="javascript:;" onclick="register()"><?php echo ((isset($language['lg_register'])) ? $language['lg_register'] : ""); ?></a></div>
-              </div>
+                <form id="signin_form" method="post">
+                    <div class="modal-body">
+                        <div class="form-group form-focus">
+                            <input type="text" name="email" id="login_email" class="form-control floating" />
+                            <label class="focus-label">
+                                <?=isset($language['lg_email_or_mobile']) ? $language['lg_email_or_mobile'] : '';?>
+                            </label>
+                        </div>
+                        <div class="form-group form-focus">
+                            <input type="password" name="password" id="password" class="form-control floating">
+                            <label class="focus-label">
+                                <?=isset($language['lg_password']) ? $language['lg_password'] : '';?>
+                            </label>
+                        </div>
+                        <div class="text-right">
+                            <a class="forgot-link" href="javascript:;" onclick="forgot_password()">
+                                <?=isset($language['lg_forgot_password']) ? $language['lg_forgot_password'] : '';?>
+                            </a>
+                        </div>
+                        <div class="modal-footer d-block pl-0 pr-0">
+                            <button class="btn btn-primary btn-block btn-lg login-btn" id="signin_btn" type="submit">
+                                <?=isset($language['lg_signin']) ? $language['lg_signin'] : '';?>
+                            </button>
+                            <div class="row w-100" style="margin-top: 10px;margin-bottom: 10px;">
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-social btn-google w-100" id="googlecheckoutsigninbtn">
+                                        <i class="fab fa-google float-left"></i>
+                                        <?=isset($language['lg_signin']) ? $language['lg_signin'] : '';?>
+                                    </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-social btn-facebook w-100" onclick="fbcheckoutsignup()">
+                                        <i class="fab fa-facebook-f float-left"></i>
+                                        <?=isset($language['lg_signin']) ? $language['lg_signin'] : '';?>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center dont-have">
+                                <?=isset($language['lg_dont_have_an_ac']) ? $language['lg_dont_have_an_ac'] : '';?> 
+                                <a href="javascript:;" onclick="register()">
+                                    <?=isset($language['lg_register']) ? $language['lg_register'] : '';?>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-          </form>
         </div>
-      </div>
     </div>
     <!-- /Login Modal -->
 
     <!-- Register Modal -->
     <div class="modal fade show" id="register_modal" role="dialog">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title"><?php echo ((isset($language['lg_patient4'])) ? $language['lg_patient4'] : ""); ?> <?php echo ((isset($language['lg_register'])) ? $language['lg_register'] : ""); ?></h3>
-
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-          </div>
-          <form method="post" id="register_form" autocomplete="off">
-            <div class="modal-body">
-              <input type="hidden" id="role" name="role" value="2">
-              <div class="form-group form-focus">
-                <input type="text" name="first_name" id="first_name" class="form-control floating">
-                <label class="focus-label"><?php echo ((isset($language['lg_first_name'])) ? $language['lg_first_name'] : ""); ?></label>
-              </div>
-              <div class="form-group form-focus">
-                <input type="text" name="last_name" id="last_name" class="form-control floating">
-                <label class="focus-label"><?php echo ((isset($language['lg_last_name'])) ? $language['lg_last_name'] : ""); ?></label>
-              </div>
-              <div class="form-group form-focus">
-                <input type="email" name="email" id="register_email" class="form-control floating">
-                <label class="focus-label"><?php echo ((isset($language['lg_email'])) ? $language['lg_email'] : ""); ?></label>
-              </div>
-              <!-- <input type="hidden" id="country_code" name="country_code" value="972"> -->
-              <div class="row form-group form-focus">
-                <div class="col-md-6">
-                  <select name="country_code" class="form-control" id="country_code" style="padding-top:5px;">
-                  </select>
-                  <!-- <input type="email" name="email" id="register_email" class="form-control floating"> -->
-                  <!-- <label class="focus-label" style="left:30px;"><?php echo ((isset($language['lg_email'])) ? $language['lg_email'] : ""); ?></label> -->
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">
+                        <?=isset($language['lg_patient4']) ? $language['lg_patient4'] : '';?> 
+                        <?=isset($language['lg_register']) ? $language['lg_register'] : '';?>
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
                 </div>
-                <div class="col-md-6">
-                  <input type="text" name="mobileno" id="mobileno" class="form-control floating">
-                  <label class="focus-label" style="left:30px;"><?php echo ((isset($language['lg_mobile_number'])) ? $language['lg_mobile_number'] : "") ?></label>
-                </div>
-              </div>
-              <?php if (settings('tiwilio_option') == '1') { ?>
-                <div class="text-right otp_load">
-                  <a class="forgot-link" href="javascript:void(0);" id="sendotp"><?php echo ((isset($language['lg_send_otp'])) ? $language['lg_send_otp'] : "") ?></a>
-                </div>
-                <div class="form-group form-focus OTP">
-                  <input type="text" name="otpno" id="otpno" class="form-control floating">
-                  <label class="focus-label"><?php echo ((isset($language['lg_otp'])) ? $language['lg_otp'] : "") ?></label>
-                </div>
-              <?php } ?>
-              <div class="row form-group form-focus">
-                <div class="col-md-6">
-                  <input type="password" name="password" id="register_password" class="form-control floating">
-                  <label class="focus-label" style="left:30px;"><?php echo ((isset($language['lg_password'])) ? $language['lg_password'] : ""); ?></label>
-                </div>
-                <div class="col-md-6">
-                  <input type="password" name="confirm_password" id="register_confirm_password" class="form-control floating">
-                  <label class="focus-label" style="left:30px;"><?php echo ((isset($language['lg_confirm_passwor'])) ? $language['lg_confirm_passwor'] : ""); ?></label>
-                </div>
-              </div>
-              <div class="text-left check_ctrl">
-                <div class="text-right">
-                  <a class="forgot-link" href="javascript:;" onclick="login()" style="color: #008FF8 "><?php echo ((isset($language['lg_already_have_an'])) ? $language['lg_already_have_an'] : ""); ?></a>
-                </div>
-              </div>
+                <form method="post" id="register_form" autocomplete="off">
+                    <div class="modal-body">
+                        <input type="hidden" id="role" name="role" value="2" />
+                        <div class="form-group form-focus">
+                            <input type="text" name="first_name" id="first_name" class="form-control floating">
+                            <label class="focus-label">
+                                <?=isset($language['lg_first_name']) ? $language['lg_first_name'] : '';?>
+                            </label>
+                        </div>
+                        <div class="form-group form-focus">
+                            <input type="text" name="last_name" id="last_name" class="form-control floating">
+                            <label class="focus-label">
+                                <?=isset($language['lg_last_name']) ? $language['lg_last_name'] : '';?>
+                            </label>
+                        </div>
+                        <div class="form-group form-focus">
+                            <input type="email" name="email" id="register_email" class="form-control floating">
+                            <label class="focus-label">
+                                <?=isset($language['lg_email']) ? $language['lg_email'] : '';?>
+                            </label>
+                        </div>
+                        <div class="row form-group form-focus">
+                            <div class="col-md-6">
+                            <select name="country_code" class="form-control" id="country_code" style="padding-top:5px"></select>
+                            <!-- <input type="email" name="email" id="register_email" class="form-control floating"> -->
+                            <!-- <label class="focus-label" style="left:30px;">
+                                <?php // ((isset($language['lg_email'])) ? $language['lg_email'] : ""); ?>
+                            </label> -->
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="mobileno" id="mobileno" class="form-control floating" />
+                                <label class="focus-label" style="left:30px;">
+                                    <?=isset($language['lg_mobile_number']) ? $language['lg_mobile_number'] : '';?>
+                                </label>
+                            </div>
+                        </div>
+                        <?php if (settings('tiwilio_option') == '1') { ?>
+                            <div class="text-right otp_load">
+                                <a class="forgot-link" href="javascript:void(0);" id="sendotp">
+                                    <?=isset($language['lg_send_otp']) ? $language['lg_send_otp'] : '';?>
+                                </a>
+                            </div>
+                            <div class="form-group form-focus OTP">
+                                <input type="text" name="otpno" id="otpno" class="form-control floating" />
+                                <label class="focus-label">
+                                    <?=isset($language['lg_otp']) ? $language['lg_otp'] : '';?>
+                                </label>
+                            </div>
+                        <?php } ?>
+                        <div class="row form-group form-focus">
+                            <div class="col-md-6">
+                                <input type="password" name="password" id="register_password" class="form-control floating" />
+                                <label class="focus-label" style="left:30px;">
+                                    <?=isset($language['lg_password']) ? $language['lg_password'] : '';?>
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="password" name="confirm_password" id="register_confirm_password" class="form-control floating" />
+                                <label class="focus-label" style="left:30px;">
+                                    <?=isset($language['lg_confirm_passwor']) ? $language['lg_confirm_passwor'] : '';?>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="text-left check_ctrl">
+                            <div class="text-right">
+                                <a class="forgot-link" href="javascript:;" onclick="login()" style="color: #008FF8 ">
+                                    <?=isset($language['lg_already_have_an']) ? $language['lg_already_have_an'] : '';?>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-block">
+                        <button class="btn btn-primary btn-block btn-lg login-btn" id="register_btn" type="submit">
+                            <?=isset($language['lg_signup']) ? $language['lg_signup'] : '';?> 
+                        </button>
+                        <div class="row w-100" style="margin-top: 10px;margin-bottom: 10px;">
+                            <div class="col-md-6">
+                                <button class="btn btn-social btn-google w-100" type="button" id="googlecheckoutsignupbtn">
+                                    <i class="fab fa-google float-left"></i>
+                                    <?=isset($language['lg_signup']) ? $language['lg_signup'] : '';?>
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-social btn-facebook w-100" type="button" onclick="fbcheckoutsignin()">
+                                    <i class="fab fa-facebook-f float-left"></i>
+                                    <?=isset($language['lg_signup']) ? $language['lg_signup'] : '';?>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="modal-footer d-block">
-              <button class="btn btn-primary btn-block btn-lg login-btn" id="register_btn" type="submit"><?php echo ((isset($language['lg_signup'])) ? $language['lg_signup'] : ""); ?> </button>
-              <div class="row w-100" style="margin-top: 10px;margin-bottom: 10px;">
-                <div class="col-md-6">
-                  <button class="btn btn-social btn-google" type="button" id="googlecheckoutsignupbtn" style="width: 100%;"><i class="fab fa-google float-left"></i><?php echo ((isset($language['lg_signup'])) ? $language['lg_signup'] : ""); ?></button>
-                </div>
-                <div class="col-md-6">
-                  <button class="btn btn-social btn-facebook" type="button" onclick="fbcheckoutsignin()" style="width: 100%;"><i class="fab fa-facebook-f float-left"></i><?php echo ((isset($language['lg_signup'])) ? $language['lg_signup'] : ""); ?></button>
-                </div>
-              </div>
-            </div>
-          </form>
         </div>
-      </div>
     </div>
-    <!-- /Register Modal -->
+<?php } ?>
 
-  <?php }
-
-  if ($page == 'doctor_profile' || $page == 'profile' || $page == 'pharmacy_profile' || $page == 'lab_profile') {
-  ?>
+<?php if ($page == 'doctor_profile' || $page == 'profile' || $page == 'pharmacy_profile' || $page == 'lab_profile') { ?>
 
     <div class="modal fade custom-modal" id="avatar-modal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close profile_image_popup_close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h4 class="modal-title"><i><?php echo ((isset($language['lg_profile_image'])) ? $language['lg_profile_image'] : ""); ?></i></h4>
+            <h4 class="modal-title"><i><?=isset($language['lg_profile_image']) ? $language['lg_profile_image'] : '';?></i></h4>
           </div>
           <?php
           // $curprofileimage = (!empty($profile['profileimage']))?(($profile['profileimage'])):''; 
           if ($profile['profileimage'] == "" || ($profile['profileimage'] != "" && !file_exists($profile['profileimage']))) {
             $curprofileimage = base_url() . 'assets/img/user.png';
           } else {
-            $curprofileimage = (!empty($profile['profileimage'] ?? "")) ? base_url() . $profile['profileimage'] ?? "" : base_url() . 'assets/img/user.png';
+            $curprofileimage = !empty($profile['profileimage'] ?? "") ? '/' . $profile['profileimage'] ?? "" : '/assets/img/user.png';
           }
           ?>
-          <form class="avatar-form" action="<?php echo base_url('update-profile-image') ?>" enctype="multipart/form-data" method="post">
+          <form class="avatar-form" action="<?=base_url('update-profile-image') ?>" enctype="multipart/form-data" method="post">
             <div class="modal-body">
               <div class="avatar-body">
                 <!-- Upload image and data -->
                 <div class="avatar-upload">
-                  <input name="prev_img" type="hidden" value="<?php echo $curprofileimage; ?>">
+                  <input name="prev_img" type="hidden" value="<?=$curprofileimage; ?>">
                   <input class="avatar-src" name="avatar_src" type="hidden">
                   <input class="avatar-data" name="avatar_data" type="hidden">
-                  <label for="avatarInput"><?php echo ((isset($language['lg_select_image'])) ? $language['lg_select_image'] : ""); ?></label>
+                  <label for="avatarInput"><?=isset($language['lg_select_image']) ? $language['lg_select_image'] : ''; ?></label>
                   <input class="avatar-input" id="avatarInput" name="avatar_file" type="file" required accept="image/png, image/gif, image/jpeg">
-                  <span id="image_upload_error" class="error" style="display:none;"> <?php echo ((isset($language['lg_please_upload_i'])) ? $language['lg_please_upload_i'] : ""); ?> </span>
+                  <span id="image_upload_error" class="error" style="display:none;"> <?=isset($language['lg_please_upload_i']) ? $language['lg_please_upload_i'] : '';?> </span>
                   <span id="image_upload_size_error" class="error" style="display:none;"> </span>
                 </div>
                 <!-- Crop and preview -->
@@ -502,12 +562,16 @@ if ($module == 'doctor' || $module == 'clinic' || $module == 'patient' || $modul
               </div>
             </div>
             <div class="modal-footer">
-              <div class="row avatar-btns">
-                <div class="col-md-12">
-                  <button class="btn btn-success avatar-save" type="submit"><?php echo ((isset($language['lg_save'])) ? $language['lg_save'] : ""); ?></button>
-                  <button type="button" class="btn btn-secondary submit-btn profile_image_popup_close" data-dismiss="modal"><?php echo ((isset($language['lg_cancel'])) ? $language['lg_cancel'] : ""); ?></button>
+                <div class="row avatar-btns">
+                    <div class="col-md-12">
+                        <button class="btn btn-success avatar-save" type="submit">
+                            <?=isset($language['lg_save']) ? $language['lg_save'] : '';?>
+                        </button>
+                        <button type="button" class="btn btn-secondary submit-btn profile_image_popup_close" data-dismiss="modal">
+                            <?=isset($language['lg_cancel']) ? $language['lg_cancel'] : '';?>
+                        </button>
+                    </div>
                 </div>
-              </div>
             </div>
           </form>
         </div>
@@ -544,19 +608,26 @@ if ($module == 'doctor' || $module == 'clinic' || $module == 'patient' || $modul
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title"><?php echo ((isset($language['lg_delete'])) ? $language['lg_delete'] : ""); ?></h5>
+            <h5 class="modal-title"><?=isset($language['lg_delete']) ? $language['lg_delete'] : ''; ?></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <input type="hidden" id="delete_id">
-          <input type="hidden" id="delete_table">
-          <div class="modal-body">
-            <p><?php echo ((isset($language['lg_are_you_sure_wa'])) ? $language['lg_are_you_sure_wa'] : ""); ?> <span id="delete_title"></span> ?</p>
-          </div>
+            <input type="hidden" id="delete_id" />
+            <input type="hidden" id="delete_table" />
+            <div class="modal-body">
+                <p>
+                    <?=isset($language['lg_are_you_sure_wa']) ? $language['lg_are_you_sure_wa'] : '';?> 
+                    <span id="delete_title"></span> ?
+                </p>
+            </div>
           <div class="modal-footer">
-            <button type="button" id="delete_btn" onclick="delete_details()" class="btn btn-primary"><?php echo ((isset($language['lg_yes'])) ? $language['lg_yes'] : ""); ?></button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo ((isset($language['lg_no6'])) ? $language['lg_no6'] : ""); ?></button>
+            <button type="button" id="delete_btn" onclick="delete_details()" class="btn btn-primary">
+                <?=isset($language['lg_yes']) ? $language['lg_yes'] : '';?>
+            </button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                <?=isset($language['lg_no6']) ? $language['lg_no6'] : '';?>
+            </button>
           </div>
         </div>
       </div>
@@ -584,7 +655,9 @@ if ($module == 'doctor' || $module == 'clinic' || $module == 'patient' || $modul
           </div>
           <div class="clearfix"></div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal"><?php echo ((isset($language['lg_close1'])) ? $language['lg_close1'] : ""); ?></button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                <?=isset($language['lg_close1']) ? $language['lg_close1'] : ''; ?>
+            </button>
           </div>
         </div>
       </div>
@@ -595,15 +668,13 @@ if ($module == 'doctor' || $module == 'clinic' || $module == 'patient' || $modul
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title">Add <?php echo ((isset($language['lg_medical_records'])) ? $language['lg_medical_records'] : ""); ?></h3>
+            <h3 class="modal-title">Add <?=isset($language['lg_medical_records']) ? $language['lg_medical_records'] : ''; ?></h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <form id="medical_records_form" enctype="multipart/form-data">
             <div class="modal-body">
               <input type="hidden" name="medical_record_id" id="medical_record_id" value="">
-              <input type="hidden" name="patient_id" id="patient_id" value="<?php
-                                                                            /** @var int $patient_id */
-                                                                            echo $patient_id; ?>">
+              <input type="hidden" name="patient_id" id="patient_id" value="<?=$patient_id; ?>">
 
               <div class="form-group">
                 <label><?php echo ((isset($language['lg_description__op'])) ? $language['lg_description__op'] : ""); ?></label>
@@ -631,25 +702,25 @@ if ($module == 'doctor' || $module == 'clinic' || $module == 'patient' || $modul
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title">Edit <?php echo ((isset($language['lg_medical_records'])) ? $language['lg_medical_records'] : ""); ?></h3>
+            <h3 class="modal-title">Edit <?php // ((isset($language['lg_medical_records'])) ? $language['lg_medical_records'] : ""); ?></h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <form id="medical_records_form"  enctype="multipart/form-data">          
             <div class="modal-body">
-              <input type="hidden" name="patient_id" value="<?php /** @var int $patient_id */ echo $patient_id; ?>">
+              <input type="hidden" name="patient_id" value="<?php /** @var int $patient_id */ // $patient_id; ?>">
                               
               <div class="form-group">
-                <label><?php echo ((isset($language['lg_description__op'])) ? $language['lg_description__op'] : ""); ?></label>
+                <label><?php // ((isset($language['lg_description__op'])) ? $language['lg_description__op'] : ""); ?></label>
                 <textarea class="form-control" name="description" id="description" rows="5"></textarea>
               </div>
               <div class="form-group">
-                <label><?php echo ((isset($language['lg_upload_file'])) ? $language['lg_upload_file'] : ""); ?>[Allowed Types: jpeg/jpg/png/docx/xlsx/pdf Only]</label> 
+                <label><?php // ((isset($language['lg_upload_file'])) ? $language['lg_upload_file'] : ""); ?>[Allowed Types: jpeg/jpg/png/docx/xlsx/pdf Only]</label> 
                 <input class="form-control" type="file" name="user_file" id="user_files_mr">
               </div>
               
               <div class="submit-section text-center">
-                <button type="submit" id="medical_btn" class="btn btn-primary submit-btn"><?php echo ((isset($language['lg_submit'])) ? $language['lg_submit'] : ""); ?></button>
-                <button type="button" class="btn btn-secondary submit-btn" data-dismiss="modal"><?php echo ((isset($language['lg_cancel'])) ? $language['lg_cancel'] : ""); ?></button>             
+                <button type="submit" id="medical_btn" class="btn btn-primary submit-btn"><?php // ((isset($language['lg_submit'])) ? $language['lg_submit'] : ""); ?></button>
+                <button type="button" class="btn btn-secondary submit-btn" data-dismiss="modal"><?php // ((isset($language['lg_cancel'])) ? $language['lg_cancel'] : ""); ?></button>             
               </div>
             </div>
           </form>
@@ -681,12 +752,12 @@ if ($module == 'doctor' || $module == 'clinic' || $module == 'patient' || $modul
       <div class="modal-dialog modal-lg" role="document" style="width: fit-content;">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="modal-title"><?php echo ((isset($language['lg_view1'])) ? $language['lg_view1'] : ""); ?> <span class="view_title"></span></h3>
+            <h3 class="modal-title"><?php // ((isset($language['lg_view1'])) ? $language['lg_view1'] : ""); ?> <span class="view_title"></span></h3>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
           <div class="modal-body">
-            <label><?php echo ((isset($language['lg_date1'])) ? $language['lg_date1'] : ""); ?> : <span id="view_date"></span></label><br>
-            <label><?php echo ((isset($language['lg_patient_name'])) ? $language['lg_patient_name'] : ""); ?> : <span id="patient_name"></span></label>
+            <label><?php // ((isset($language['lg_date1'])) ? $language['lg_date1'] : ""); ?> : <span id="view_date"></span></label><br>
+            <label><?php // ((isset($language['lg_patient_name'])) ? $language['lg_patient_name'] : ""); ?> : <span id="patient_name"></span></label>
 
             <div class="view_details"></div>
           </div>
@@ -1014,30 +1085,25 @@ if (session('user_id') != '') { ?>
     </div>
   </div>
 
-<?php }
-if ($module == 'signin' && $page == 'register') { ?>
+<?php } ?>
 
-  <div class="modal fade call-modal" id="user_role_modal" data-keyboard="false" data-backdrop="static">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-
-          <!-- Incoming Call -->
-          <select class="form-control" id="user_role" onchange="social_register()">
-            <option value=""><?php echo ((isset($language['lg_select_role'])) ? $language['lg_select_role'] : ""); ?></option>
-            <option value="1"><?php echo ((isset($language['lg_doctor2'])) ? $language['lg_doctor2'] : ""); ?></option>
-            <option value="2"><?php echo ((isset($language['lg_patient4'])) ? $language['lg_patient4'] : ""); ?></option>
-            <option value="5"><?php echo ((isset($language['lg_pharmacy'])) ? $language['lg_pharmacy'] : ""); ?></option>
-          </select>
-          <!-- /Incoming Call -->
-
+<?php if ($module == 'signin' && $page == 'register') { ?>
+    <div class="modal fade call-modal" id="user_role_modal" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Incoming Call -->
+                    <select class="form-control" id="user_role" onchange="social_register()">
+                        <option value=""><?=isset($language['lg_select_role']) ? $language['lg_select_role'] : ''; ?></option>
+                        <option value="1"><?=isset($language['lg_doctor2']) ? $language['lg_doctor2'] : ''; ?></option>
+                        <option value="2"><?=isset($language['lg_patient4']) ? $language['lg_patient4'] : ''; ?></option>
+                        <option value="5"><?=isset($language['lg_pharmacy']) ? $language['lg_pharmacy'] : ''; ?></option>
+                    </select>
+                    <!-- /Incoming Call -->
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-
-
-
 <?php } ?>
 
 <?php if ($page == 'lab_tests') { ?>
@@ -1119,10 +1185,7 @@ if (($page == 'appointments' ||  $page == 'lab_dashboard') && $module == 'lab') 
               <input class="form-control" type="file" name="user_file" id="user_files_mr" multiple="multiple">
             </div>
 
-            <!--  <div class="form-group">
-                <label><?php echo ((isset($language['lg_description__op'])) ? $language['lg_description__op'] : ""); ?></label>
-                <textarea class="form-control" name="description" id="description" rows="5"></textarea>
-              </div> -->
+            <?php // ((isset($language['lg_description__op'])) ? $language['lg_description__op'] : ""); ?>
 
 
             <div class="submit-section text-center">
@@ -1215,11 +1278,6 @@ if ($page == "doctorList") { ?>
 
 <?php  }  ?>
 
-    <!-- Pet update code
-    added new on 13rd June 2024 by Muddasar-->
-<!-- 
-// if ($page == 'profile' || $page=="appoinments" ) {//|| $page="doctor_previe" -->
-<!-- The Modal -->
 <div class="modal fade" id="addPetModal">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
@@ -1369,50 +1427,6 @@ if ($page == "doctorList") { ?>
     </div>
   </div>
 </div>
-
-<div class="modal fade" id="selectPetModal">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-
-
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="signoutBtnModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content" style="border-radius:24px;padding:30px;background-color:#fff;box-shadow:0 10px 40px rgba(0,0,0,0.1);position:relative;">
-      
-      <div class="modal-body text-center" style="padding:30px;">
-
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-        style="position:absolute;top:20px;right:24px;font-size:28px;font-weight:bold;color:#aaa;background:none;border:none;">
-         <span aria-hidden="true">&times;</span>
-      </button>
-        <!-- Title -->
-        <h2 style="font-size:24px;font-weight:600;font-family:Poppins,sans-serif;margin-bottom:30px;color:#252525;">
-          Are you sure you want<br>to sign out of your account?
-        </h2>
-
-        <!-- Buttons -->
-        <div style="display:flex;justify-content:center;gap:20px;">
-          <button class="btn" style="min-width:140px;height:48px;font-size:16px;font-weight:500;border-radius:12px;font-family:Poppins,sans-serif;border:2px solid #252525;color:#252525;">
-           <a href="<?php echo base_url(); ?>user-logout" id="signout">
-              <span><?php echo $language['lg_signout'] ?? "Signout"; ?></span>
-					  </a>
-          </button>
-           <!-- Cancel Button -->
-          <button type="button" data-dismiss="modal"
-            style="min-width:140px;height:48px;font-size:16px;font-weight:500;border-radius:12px;font-family:Poppins,sans-serif;background-color:#FF9900;color:white;border:none;">
-            CANCEL
-          </button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
         
 <!-- Delete Confirmation Modal -->
 <div class="modal fade" id="confirmDeleteModal" tabindex="-1" role="dialog" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
@@ -1435,46 +1449,41 @@ if ($page == "doctorList") { ?>
     </div>
 </div>
 
-<?php //} ?>
-     <!-- Pet update code end
-    added new on 13rd June 2024 by Muddasar-->
 <audio id="myAudio">
-  <source src="<?php echo base_url(); ?>assets/ring/phone_ring.mp3" type="audio/mp3">
+  <source src="/assets/ring/phone_ring.mp3" type="audio/mp3">
 </audio>
 
-<?php
-echo view('user/modules/language_scripts/scripts');
-?>
+<?=view('user/modules/language_scripts/scripts');?>
 
 <script type="text/javascript">
-  var base_url = '<?php echo base_url(); ?>';
-  var modules = '<?php echo $module; ?>';
-  var pages = '<?php echo $page; ?>';
-  var roles = '<?php echo session('role'); ?>';
+  var base_url = '<?=base_url(); ?>';
+  var modules = '<?=$module; ?>';
+  var pages = '<?=$page; ?>';
+  var roles = '<?=session('role'); ?>';
 </script>
 
 <!-- jQuery -->
 <?php if ($page == 'add_post' || $page == 'edit_post' || $page == 'add_product' || $page == 'edit_product') { ?>
-  <script src="<?php echo base_url(); ?>assets/js/jquery2.js"></script>
+  <script src="/assets/js/jquery2.js"></script>
 <?php } else { ?>
-  <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+  <script src="/assets/js/jquery.min.js"></script>
 <?php } ?>
 <!-- Bootstrap Core JS -->
-<script src="<?php echo base_url(); ?>assets/js/popper.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
 
 
 <?php
 if ($module == 'doctor' || $module == 'patient' || $module == 'calendar' || $module == 'invoice' || $module == 'lab' || $module == 'clinic' || $theme == 'blog' || $page == 'doctors_search'  || $page == 'doctors_searchmap'  || $page == 'doctors_mapsearch' || $page == 'patients_search' || $module == 'pharmacy' || $page == 'products_list' || $page == 'pharmacy_search_bydoctor' || $page == 'products_list_by_pharmacy') {
 ?>
-  <script type="text/javascript" src="<?php echo base_url(); ?>assets/multiselect/dist/js/bootstrap-multiselect.js"></script>
+  <script type="text/javascript" src="/assets/multiselect/dist/js/bootstrap-multiselect.js"></script>
   <!-- Sticky Sidebar JS -->
-  <script src="<?php echo base_url(); ?>assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+  <script src="/assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
   <!-- Circle Progress JS -->
-  <script src="<?php echo base_url(); ?>assets/js/circle-progress.min.js"></script>
+  <script src="/assets/js/circle-progress.min.js"></script>
 <?php } ?>
-<script src="<?php echo base_url(); ?>assets/js/bootstrap-datepicker.min.js"></script>
+<script src="/assets/js/bootstrap-datepicker.min.js"></script>
 <?php
 if (($module == 'doctor' || $module == 'subscription' || $module == 'clinic' || $module == 'patient' || $module == 'post' || $module == 'calendar' || $module == 'invoice' || $module == 'pharmacy' || $module == 'home' || $module == 'ecommerce' || $module == 'lab')) {
   if ($page == 'book_appoinments' || $page == 'doctor_profile' || $page == 'profile' || $page == 'hospital_profile' || $page == 'pharmacy_profile' || $page == 'lab_profile' || $page == 'lab_tests_preview' || $page == 'add_product' || $page == 'products_list_by_pharmacy' || $page == "doctor_dashboard") {
@@ -1484,68 +1493,68 @@ if (($module == 'doctor' || $module == 'subscription' || $module == 'clinic' || 
   if ($page == 'doctor_profile' || $page == 'profile' || $page == 'lab_profile' || $page == 'hospital_profile' || $page == 'pharmacy_profile' || $page == 'add_product') {
   ?>
 
-    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/cropper_profile.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/cropper.min.js"></script>
+    <script type="text/javascript" src="/assets/js/cropper_profile.js"></script>
+    <script type="text/javascript" src="/assets/js/cropper.min.js"></script>
 
   <?php
   }   ?>
   <?php if ($page == 'products_list_by_pharmacy' || $page == 'index') {
   ?>
-    <script src="<?php echo base_url(); ?>assets/js/jquery-ui.min.js"></script>
+    <script src="/assets/js/jquery-ui.min.js"></script>
   <?php
   }
   if ($page == 'profile' || $page == 'add_product') {
   ?>
     <!-- Clinic Profile -->
-    <script src="<?php echo base_url(); ?>assets/plugins/dropzone/dropzone.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/profile-settings.js"></script>
+    <script src="/assets/plugins/dropzone/dropzone.min.js"></script>
+    <script src="/assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+    <script src="/assets/js/profile-settings.js"></script>
   <?php
   }
   if ($page == 'calendar' || $page == 'add_product') {
   ?>
-    <script src="<?php echo base_url(); ?>assets/js/moment.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/assets/js/moment.min.js"></script>
+    <script src="/assets/js/bootstrap-datetimepicker.min.js"></script>
 
-    <script src="<?php echo base_url(); ?>assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/plugins/fullcalendar/fullcalendar.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/js/calendar.js"></script>
+    <script src="/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/assets/plugins/fullcalendar/fullcalendar.min.js"></script>
+    <script src="/assets/js/calendar.js"></script>
 
   <?php
   }
   if ($page == 'doctorList' || $page == 'doctor_dashboard' || $page == 'mypatient_preview' || $page == 'patientDashboard' || $page == 'index' || $page == 'pending_post' || $page == 'invoice' || $page == 'accounts' || $page == 'pharmacy_quotation' || $page == 'product_list' || $page == 'patient_quotation_list' || $page == 'orderlist' || $page == 'pharmacy_dashboard' || $page == 'lab_appoinments' || $page == 'appointments' || $page == "add_doctor" || $page == 'lab_appointment_list' || $page == 'lab_tests' || $page == 'lab_dashboard' || $module == 'pharmacy') {
   ?>
 
-    <script src="<?php echo base_url(); ?>assets/plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="<?php echo base_url(); ?>assets/plugins/datatables/datatables.min.js"></script>
+    <script src="/assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/assets/plugins/datatables/datatables.min.js"></script>
 
   <?php
   }
   if ($page == 'add_prescription' || $page == 'edit_prescription' || $page == 'add_billing' || $page == 'edit_billing') {
   ?>
 
-    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/signature-pad.js"></script>
+    <script type="text/javascript" src="/assets/js/signature-pad.js"></script>
 
 <?php
   }
 }
 ?>
 <!-- Slick JS -->
-<script src="<?php echo base_url(); ?>assets/js/slick.js"></script>
+<script src="/assets/js/slick.js"></script>
 
 <!-- Custom JS -->
-<script src="<?php echo base_url(); ?>assets/js/script.js"></script>
+<script src="/assets/js/script.js"></script>
 
-<script src="<?php echo base_url(); ?>assets/js/jquery.validate.js" type="text/javascript"></script>
-<script src="<?php echo base_url(); ?>assets/js/jquery.password-validation.js" type="text/javascript"></script>
+<script src="/assets/js/jquery.validate.js" type="text/javascript"></script>
+<script src="/assets/js/jquery.password-validation.js" type="text/javascript"></script>
 
 <!-- Widget Setting JS -->
-<script src="<?php echo base_url(); ?>assets/js/widget-settings.js"></script>
+<script src="/assets/js/widget-settings.js"></script>
 
 <?php
 if ($page == "accounts") {
 ?>
-  <script src="<?php echo base_url(); ?>assets/js/accounts.js"></script>
+  <script src="/assets/js/accounts.js"></script>
 <?php
 }
 ?>
@@ -1557,9 +1566,9 @@ if (($module == 'patient' || $module == 'ecommerce' || $module == 'subscription'
 <?php
 }
 ?>
-<script src="<?php echo base_url(); ?>assets/js/toastr.js"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jstz-1.0.7.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/plugins/select2/js/select2.min.js"></script>
+<script src="/assets/js/toastr.js"></script>
+<script src="/assets/js/jstz-1.0.7.min.js"></script>
+<script src="/assets/plugins/select2/js/select2.min.js"></script>
 
 <script type="text/javascript">
   if ($('.select').length > 0) {
@@ -1571,12 +1580,12 @@ if (($module == 'patient' || $module == 'ecommerce' || $module == 'subscription'
 </script>
 
 <!-- Fancybox JS -->
-<script src="<?php echo base_url(); ?>assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+<script src="/assets/plugins/fancybox/jquery.fancybox.min.js"></script>
 
 <?php
 if (($module != 'signin' &&  $module != 'patient' &&  $module != 'clinic') || $page == "checkout") {
 ?>
-  <script src="<?php echo base_url(); ?>assets/js/web.js?v=0.0009"></script>
+  <script src="/assets/js/web.js?v=0.0009"></script>
 <?php
 }
 ?>
@@ -1584,7 +1593,7 @@ if (($module != 'signin' &&  $module != 'patient' &&  $module != 'clinic') || $p
 <?php
 if ($module == 'home') {
 ?>
-  <script src="<?php echo base_url(); ?>assets/js/user/product.js"></script>
+  <script src="/assets/js/user/product.js"></script>
 <?php
 }
 ?>
@@ -2182,5 +2191,9 @@ if ($module == 'patient' && $page == 'checkout') {  ?>
   
 
 <?php } ?>
+
+    <?=$this->renderSection('modal');?>
+
+    <?=$this->renderSection('javascript');?>
 </body>
 </html>

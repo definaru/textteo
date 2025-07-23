@@ -1033,14 +1033,7 @@ class PatientController extends BaseController
         // Output JSON response
         echo json_encode($response);
     }
-
-    public function getPatientPets()
-    {
-        $pets = $this->userModel->getPetsByPatientId(session('user_id'));
-        $data['pets'] = $pets;
-        $html = view('user/patient/petModalSelect', $data);
-        return $this->response->setJSON(['status' => 'success', 'html' => $html]);
-    }
+    
 
     public function appointmentCaptions($sessionId)
     {

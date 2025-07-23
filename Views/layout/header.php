@@ -3,6 +3,7 @@
     $user = session('user_id');
     $link = $user ? '/patient/profile' : '/login';
     $text = $user ? 'Log out' : 'Sign In';
+    $icon = $user ? 'user' : 'logout';
 ?>
 <header class="header-wrapper"> 
     <nav class="navbar navbar-expand-lg bg-white py-2 py-md-4"> 
@@ -81,7 +82,7 @@
                             </div>
                         <?php } ?>
                         <a class="btn btn-outline-dark order-2 order-md-1" href="<?=$link;?>">
-                            <?=SvgIcons::user(['class' => 'd-none d-md-block mt-1']);?>
+                            <?=SvgIcons::$icon(['class' => 'd-none d-md-block mt-1']);?>
                             <span class="d-md-none d-block text-uppercase fw-semibold"><?=$text;?></span>
                         </a>
                         <a class="btn btn-book-now text-decoration-none order-1 order-md-2" href="/search-veterinary?type=6">

@@ -39,7 +39,7 @@ class ApiMamoPay
                 'enable_tabby' => false,
                 'enable_message' => false,
                 'enable_tips' => false,
-                'save_card' => 'off',
+                'save_card' => 'required',
                 'enable_customer_details' => false,
                 'enable_quantity' => false,
                 'enable_qr_code' => false,
